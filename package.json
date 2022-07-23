@@ -1,0 +1,23 @@
+
+{                                                                                
+  "name": "be.omi.ifileextensionmerger",                              
+  "displayName": "IFileExtensionMerger",                        
+  "version": "0.0.1",                         
+  "unity": "2018.1",                             
+  "unityRelease": "",                             
+  "description": "This package merge files based on the extension name and create acces to them as a big string text.",                         
+  "keywords": ["Script","Tool"],                       
+  "dependencies":{},     
+  "relatedPackages":{},     
+  "samples" : [],     
+  "author" : {
+"name":"",
+"mail":"",
+"url":""},     
+  "repository":{
+"type":"Git",
+"url":"https://github.com/OpenMacroInput/2022_07_23_IFileExtensionMerger.git",
+"footprint":"",
+"revision":""},     
+  "category": "Script"                   
+} 
