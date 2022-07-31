@@ -4,54 +4,59 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public interface IFileExtensionMergeManager //:
-    //IMergeFilesAccessorGet,
-    //IMergeFilesAccessorRefreshable,
-    //IMergeFilesRegisterGet,
-    //IMergeFilesToOverwatchFilesFilter
-{ 
+public interface IMergeFilesAccessorGetHolder {
 
+    public void GetAccessor(out IMergedFilesAccessorGet accessor);
 }
-public interface IMergeFilesAccessorHolder {
-
-    public void GetAccessor(out IMergeFilesAccessorGet accessor);
-}
-public interface IMergeFilesAccessorGet
+public interface IMergedFilesAccessorGet
 {
     public void GetMergeTextOf(in IFileExtension extension, out string fullMergeText);
-    public bool IsMergeTextRegistered(in IFileExtension extension);
+    public bool IsMergedTextRegistered(in IFileExtension extension);
 }
-public interface IMergeFilesAccessorSet
+public interface IMergedFilesAccessorSet
 {
     public void SetMergeTextOf(in IFileExtension extension, in string fullMergeText);
 }
 
-public interface IMergeFilesAccessorRefreshable {
-    public void FetchRemoteInformationIntoTheProjectAsFiles(in Action callBackWhenDone);
+public interface IMergeFilesAccessorRefreshController {
+   
+    /// <summary>
+    /// This call don't create the merged file. It must just update the database in prevision of merging files.
+    /// </summary>
     public void RefreshDatabaseOfFilesInGivenSources();
-    public void ProcessDatabaseToMergeFilesRegister();
-    public void ProcessDatabaseToMergeFilesRegisterFor(in IFileExtension extension);
+    /// <summary>
+    /// This call must take all the preset source and create merged file storage by extension type.
+    /// </summary>
+    public void ProcessDatabaseToMergedFilesRegister();
+    /// <summary>
+    /// If you detect a file change, no need to reload all the projet. Just the extension concerned. 
+    /// </summary>
+    /// <param name="extension"></param>
+    public void ProcessDatabaseToMergedFilesRegisterJustFor(in IFileExtension extension);
+   
 }
 
-public interface IMergeFilesRegisterGet
+public interface IMergedFilesRegisterGet
 {
     public void GetAllFiles(out string[] files);
+    public void GetListOfExtensionsRegistered(out IFileExtension [] extension);
     public void GetAllFilesOfExtension(in IFileExtension extension , out string[] files);
     public void IsExtensionRegistered(in IFileExtension extension, out bool someFilesExists);
+    public bool IsExtensionRegistered(in IFileExtension extension);
 }
-public interface IMergeFilesRegisterSet
+public interface IMergedFilesRegisterSet
 {
-    public void AddFilesInFolder(string absolutePathOfDirectoryToAdd);
-    public void AddFilesInFolders(params string [] absolutePathOfDirectoryToAdd);
-    public void AddFiles(params string [] absolutePathOfDirectoryToAdd);
-    public void RemoveAllFiles();
+    public void AddToRegisterExistingPath(params string[] absolutePathsToAdd);
+    public void RemoveAllPathAdded();
 }
 
-public interface IMergeFilesToOverwatchFilesFilter
+public interface IMergedFilesBannedExtensions
 {
     public void GetBannedExtension(out IFileExtension[] bannedExtension);
+
     public void AddExtensionToBanList(in IFileExtension fileExtensionName);
     public void RemoveExtensionToBanList(in IFileExtension fileExtensionName);
+    public bool IsInBannedList(in IFileExtension fileExtensionName);
 }
 
 public interface IFileExtension
@@ -61,30 +66,13 @@ public interface IFileExtension
 }
 
 
-
-
-
-//Example of file Extension to be sure to no have to deal with the dot during all the lib.
-public class FileExtensionDefault : IFileExtension
+public interface IFileMergedInformationGet
 {
-    public string m_fileExtensionWithoutDot;
-    public string m_fileExtensionWithDot;
-
-    public FileExtensionDefault(string fileExtension)
-    {
-        if (fileExtension.Length > 0 && fileExtension[0] == '.') 
-            m_fileExtensionWithoutDot = fileExtension.Substring(1);
-        else m_fileExtensionWithoutDot = fileExtension;
-        m_fileExtensionWithDot = '.' + m_fileExtensionWithoutDot;
-    }
-
-    public string GetExtensionStartingByDot()
-    {
-        return m_fileExtensionWithDot;
-    }
-
-    public string GetExtensionWithoutStartingDot()
-    {
-        return m_fileExtensionWithoutDot;
-    }
+    public void GetExtensionStringWithDot(out string extensionWithDotStart);
+    public void GetExtension(out IFileExtension extension);
+    public void GetFiles(out string[] filesAbsolutePath);
+    public void GetMergeText(out string filesAbsolutePath);
 }
+
+
+

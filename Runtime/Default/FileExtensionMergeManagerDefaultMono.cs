@@ -20,28 +20,28 @@ public class FileExtensionMergeManagerDefault //: //IFileExtensionMergeManager
     ///IMergeFilesAccessorGet, IMergeFilesAccessorSet,
     ///IMergeFilesAccessorHolder
 {
-    public FileExtensionFileTracked m_filesFilter = new FileExtensionFileTracked();
+    public BannedFileExtensionsToLoad m_filesFilter = new BannedFileExtensionsToLoad();
     public FileExtensionMergeRegister m_register = new FileExtensionMergeRegister();
 
    
 }
 
 [System.Serializable]
-public class A : IMergeFilesAccessorRefreshable
+public class A : IMergeFilesAccessorRefreshController
 {
     public UnityEvent m_fetchRemoteInformation= new UnityEvent();
-    public void FetchRemoteInformationIntoTheProjectAsFiles(in Action callBackWhenDone)
+    public void TriggerThreadToFetchRemoteSourceAsFilesInProject(in Action callBackWhenDone)
     {
         m_fetchRemoteInformation.Invoke();
         if(callBackWhenDone!=null)
         callBackWhenDone.Invoke();
     }
-    public void ProcessDatabaseToMergeFilesRegister()
+    public void ProcessDatabaseToMergedFilesRegister()
     {
         throw new NotImplementedException();
     }
 
-    public void ProcessDatabaseToMergeFilesRegisterFor(in string extension)
+    public void ProcessDatabaseToMergedFilesRegisterJustFor(in IFileExtension extension)
     {
         throw new NotImplementedException();
     }
@@ -52,110 +52,59 @@ public class A : IMergeFilesAccessorRefreshable
     }
 }
 
-[System.Serializable]
-public class MergeFilesRegister : IMergeFilesRegisterGet, IMergeFilesRegisterSet
-{
-    public List<string> m_allFilesAbsolutPath = new List<string>();
-    public Dictionary<string, List<string>> m_allFilesRegisterAbsolutPath = new Dictionary<string, List<string>>();
-    public List<string> m_extensionsInDebug;
 
-    public void AddToRegister( params string[] fileAbsolutPath)
+
+[System.Serializable]
+public class BannedFileExtensionsToLoad : IMergedFilesBannedExtensions
+{
+    // public List<string> m_overwatchedFileExtension = new List<string>();
+    public Dictionary<string,IFileExtension> m_bannedFileExtension 
+        = new Dictionary<string, IFileExtension>();
+    public void AddExtensionToBanList(in IEnumerable<IFileExtension>  fileExtensionName)
     {
-        for (int i = 0; i < fileAbsolutPath.Length; i++)
+        foreach (var item in fileExtensionName)
         {
-            FileExtensionMergerUtility.ExtractExtensionWithSlashAndFirstDot(
-                 fileAbsolutPath[i], out string extension);
-            AddToRegister(extension, fileAbsolutPath[i]);
+            if (item != null)
+            {
+                AddExtensionToBanList(in item);
+            }
         }
     }
-   
-    public void AddToRegister(string extension, string fileAbsolutPath)
+    public void AddExtensionToBanList(in IFileExtension fileExtensionName)
     {
-        if (!m_allFilesRegisterAbsolutPath.ContainsKey(extension))
-            m_allFilesRegisterAbsolutPath.Add(extension, new List<string>());
-         List<string> lRef = m_allFilesRegisterAbsolutPath[extension];
-           if (!lRef.Contains(fileAbsolutPath))
-                lRef.Add(fileAbsolutPath);
-        m_extensionsInDebug = m_allFilesRegisterAbsolutPath.Keys.ToList();
+        while (m_bannedFileExtension.ContainsKey(fileExtensionName.GetExtensionStartingByDot()))
+            m_bannedFileExtension.Remove(fileExtensionName.GetExtensionStartingByDot());
+        m_bannedFileExtension.Add(fileExtensionName.GetExtensionStartingByDot(),
+            fileExtensionName);
+    }
+    public void GetBannedExtension(out IFileExtension[] bannedExtension)
+    {
+        bannedExtension = m_bannedFileExtension.Values.ToArray();
     }
 
-    public void AddFiles(params string[] absolutePathOfDirectoryToAdd)
+    public bool IsInBannedList(in IFileExtension fileExtensionName)
     {
-        m_allFilesAbsolutPath.AddRange(absolutePathOfDirectoryToAdd);
-        RemoveDouble();
+        return m_bannedFileExtension.ContainsKey(fileExtensionName.GetExtensionStartingByDot());
     }
 
-    private void RemoveDouble()
+    public void RemoveExtensionToBanList(in IFileExtension fileExtensionName)
     {
-        m_allFilesAbsolutPath = m_allFilesAbsolutPath.Distinct().ToList();
+        while (m_bannedFileExtension.ContainsKey(fileExtensionName.GetExtensionStartingByDot()))
+            m_bannedFileExtension.Remove(fileExtensionName.GetExtensionStartingByDot());
     }
 
-    public void AddFilesInFolder(string absolutePathOfDirectoryToAdd)
+    internal void ClearReset()
     {
-        FileExtensionMergerUtility.GetPathsFromFolderAbsolutePath(in absolutePathOfDirectoryToAdd, out string[] files);
-        m_allFilesAbsolutPath.AddRange(files);
-        RemoveDouble();
-    }
-
-
-    public void AddFilesInFolders(params string[] absolutePathOfDirectoryToAdd)
-    {
-
-        FileExtensionMergerUtility.GetPathsFromFolderAbsolutePath(in absolutePathOfDirectoryToAdd, out string[] files);
-        m_allFilesAbsolutPath.AddRange(files);
-        RemoveDouble();
-    }
-
-    public void GetAllFiles(out string[] files)
-    {
-        files = m_allFilesAbsolutPath.ToArray();
-    }
-
-    public void GetAllFilesOfExtension(in string extension, out string[] files)
-    {
-        if (m_allFilesRegisterAbsolutPath.ContainsKey(extension))
-            files = m_allFilesRegisterAbsolutPath[extension].ToArray();
-        else files = new string[0];
-    }
-
-    public void IsExtensionRegistered(in string extension, out bool someFilesExists)
-    {
-        someFilesExists = m_allFilesRegisterAbsolutPath.ContainsKey(extension);
-    }
-
-    public void RemoveAllFiles()
-    {
-        m_allFilesAbsolutPath.Clear();
-        m_extensionsInDebug.Clear();
+        m_bannedFileExtension.Clear();
     }
 }
 
-
-[System.Serializable]
-public class FileExtensionFileTracked : IMergeFilesToOverwatchFilesFilter
-{
-   // public List<string> m_overwatchedFileExtension = new List<string>();
-    public List<string> m_bannedFileExtension = new List<string>();
-   
-    public void GetBannedExtension(out string [] bannedExtension)
-    {
-        bannedExtension = m_bannedFileExtension.ToArray();
-    }
-  
-    public void RemoveExtensionToBanList(in string fileExtensionName)
-    {
-        while(m_bannedFileExtension.Contains(fileExtensionName))
-            m_bannedFileExtension.Remove(fileExtensionName);
-    }
-   
-}
-
-public class FileExtensionMergeRegister : IMergeFilesAccessorGet, IMergeFilesAccessorSet
+public class FileExtensionMergeRegister : IMergedFilesAccessorGet, IMergedFilesAccessorSet
 {
     public Dictionary<string, string> m_extensionsWithFullTextMerged = new Dictionary<string, string>();
-    public void GetMergeTextOf(in string extension, out string fullMergeText)
+    public void GetMergeTextOf(in IFileExtension extension, out string fullMergeText)
     {
-        string key = extension.ToLower();
+        string key = extension.GetExtensionStartingByDot().ToLower();
         if (m_extensionsWithFullTextMerged.ContainsKey(key))
             fullMergeText = m_extensionsWithFullTextMerged[key];
         else fullMergeText = "";
@@ -164,17 +113,17 @@ public class FileExtensionMergeRegister : IMergeFilesAccessorGet, IMergeFilesAcc
     public void ResetToZero() {
         m_extensionsWithFullTextMerged.Clear();
     }
-    public bool IsMergeTextRegistered(in string extension)
+    public bool IsMergedTextRegistered(in IFileExtension extension)
     {
-        return m_extensionsWithFullTextMerged.ContainsKey(extension);
+        return m_extensionsWithFullTextMerged.ContainsKey(extension.GetExtensionStartingByDot());
     }
 
-    public void SetMergeTextOf(in string extension, in string fullMergeText)
+    public void SetMergeTextOf(in IFileExtension extension, in string fullMergeText)
     {
-        if (m_extensionsWithFullTextMerged.ContainsKey(extension))
-            m_extensionsWithFullTextMerged[extension] = fullMergeText;
+        if (m_extensionsWithFullTextMerged.ContainsKey(extension.GetExtensionStartingByDot()))
+            m_extensionsWithFullTextMerged[extension.GetExtensionStartingByDot()] = fullMergeText;
         else
-            m_extensionsWithFullTextMerged.Add(extension, fullMergeText);
+            m_extensionsWithFullTextMerged.Add(extension.GetExtensionStartingByDot(), fullMergeText);
     }
 }
 //IFileExtensionMergeManager

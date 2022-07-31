@@ -13,8 +13,8 @@ public class TDD_FileExtensionMerger : MonoBehaviour
     public string m_extensionEnd;
     public string[] m_abstractPathsFilterByExtensionEnd;
 
-    public MergeFilesRegister m_fileRegister;
-    public FileExtensionFileTracked m_fileTracked;
+    public MergedFilesRegisterMono m_fileRegister;
+    public BannedFileExtensionsToLoad m_fileTracked;
     [ContextMenu("Refresh")]
     public void Refresh()
     {

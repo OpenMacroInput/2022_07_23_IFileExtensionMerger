@@ -1,0 +1,1543 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 705507994}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &39663425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 39663428}
+  - component: {fileID: 39663427}
+  - component: {fileID: 39663426}
+  - component: {fileID: 39663429}
+  m_Layer: 0
+  m_Name: TDD 31
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &39663426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39663425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee3b367dd205d74d8dbbab8d52e4cc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_register:
+    m_allFilesAbsolutePath:
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\default.keyboardtoboolean
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\default.miditoboolean
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\default.simplecondition
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\default.timecondition
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\default.winxboxtoboolean
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\dispofivebot.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fishingbait.timeofdaytocommands
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fivebotattack.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fivebotfollow.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fivebotheal.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fivebotinvokepet.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fivebotloadsoulattack.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fivebotlootclick.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fivebotquickattack.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\footboard.portnomenclature
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\footboard.simplecondition
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\general.screenlocations
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\largethreehealer.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\largethreehunterone.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\moveinline.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\moveinpentagra.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\multibox.screenlocations
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\multibox.stack
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\mutlibox.stringtocommands
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\password.stringtocommands
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\test.simplecondition
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\winspecific.windowkeytoboolean
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\wow.apptoboolean
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\wowthreewindow.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\xbox.simplecondition
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\default.keyboardtoboolean
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\default.miditoboolean
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\default.omi.xml
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\default.simplecondition
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\default.timecondition
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\default.winxboxtoboolean
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\dispofivebot.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fishingbait.timeofdaytocommands
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fivebotattack.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fivebotfollow.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fivebotheal.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fivebotinvokepet.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fivebotloadsoulattack.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fivebotlootclick.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fivebotquickattack.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\footboard.portnomenclature
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\footboard.simplecondition
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\general.screenlocations
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\largethreehealer.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\largethreehunterone.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\lol.simplecondition
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\lol.stringtocommands
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\lol.timecondition
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\moveinline.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\moveinpentagra.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\multibox.screenlocations
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\multibox.stack
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\mutlibox.stringtocommands
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\password.stringtocommands
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\winspecific.windowkeytoboolean
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\wow.apptoboolean
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\wowthreewindow.relativetimedcommadlines
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\xbox.simplecondition
+    m_extensionsInDebug:
+    - .keyboardtoboolean
+    - .miditoboolean
+    - .simplecondition
+    - .timecondition
+    - .winxboxtoboolean
+    - .relativetimedcommadlines
+    - .timeofdaytocommands
+    - .portnomenclature
+    - .screenlocations
+    - .stack
+    - .stringtocommands
+    - .windowkeytoboolean
+    - .apptoboolean
+    - .omi.xml
+--- !u!114 &39663427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39663425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9fc9fb488f7574a9ba25c91e451a91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_inBannedExtension: []
+  m_bannedListIn:
+  - .miditoboolean
+  - .stack
+  m_fileRegisterTarget: {fileID: 0}
+  m_absolutPathsToAdd:
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd
+  m_extensionToFind:
+    m_fileExtensionWithoutDot: simplecondition
+    m_fileExtensionWithDot: .simplecondition
+  m_extensionToFindPath:
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\default.simplecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\footboard.simplecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\test.simplecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\xbox.simplecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\default.simplecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\footboard.simplecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\lol.simplecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\xbox.simplecondition
+  m_extensionFound:
+  - .keyboardtoboolean
+  - .miditoboolean
+  - .simplecondition
+  - .timecondition
+  - .winxboxtoboolean
+  - .relativetimedcommadlines
+  - .timeofdaytocommands
+  - .portnomenclature
+  - .screenlocations
+  - .stack
+  - .stringtocommands
+  - .windowkeytoboolean
+  - .apptoboolean
+  - .omi.xml
+  m_allFiles:
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\default.keyboardtoboolean
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\default.miditoboolean
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\default.simplecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\default.timecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\default.winxboxtoboolean
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\dispofivebot.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fishingbait.timeofdaytocommands
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fivebotattack.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fivebotfollow.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fivebotheal.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fivebotinvokepet.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fivebotloadsoulattack.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fivebotlootclick.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fivebotquickattack.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\footboard.portnomenclature
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\footboard.simplecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\general.screenlocations
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\largethreehealer.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\largethreehunterone.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\moveinline.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\moveinpentagra.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\multibox.screenlocations
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\multibox.stack
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\mutlibox.stringtocommands
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\password.stringtocommands
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\test.simplecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\winspecific.windowkeytoboolean
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\wow.apptoboolean
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\wowthreewindow.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\xbox.simplecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\default.keyboardtoboolean
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\default.miditoboolean
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\default.omi.xml
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\default.simplecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\default.timecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\default.winxboxtoboolean
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\dispofivebot.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fishingbait.timeofdaytocommands
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fivebotattack.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fivebotfollow.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fivebotheal.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fivebotinvokepet.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fivebotloadsoulattack.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fivebotlootclick.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fivebotquickattack.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\footboard.portnomenclature
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\footboard.simplecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\general.screenlocations
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\largethreehealer.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\largethreehunterone.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\lol.simplecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\lol.stringtocommands
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\lol.timecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\moveinline.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\moveinpentagra.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\multibox.screenlocations
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\multibox.stack
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\mutlibox.stringtocommands
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\password.stringtocommands
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\winspecific.windowkeytoboolean
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\wow.apptoboolean
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\wowthreewindow.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\xbox.simplecondition
+  m_mergedFiles: {fileID: 39663429}
+  m_debug:
+  - m_extensionWithDot: 
+    m_sourceFiles: []
+    m_textMerged: "\r\nNumPadDivide \u2666ActionLeft\r\nNumPadMultiply \u2666ActionRight\r\nNumPadSubstract
+      \u2666ActionUp\r\nNumPadAdd \u2666ActionDown\r\nPageUp \u2666PageUp\r\nPageDown
+      \u2666PageDown\r\nWinUS_OEM_7_Quote\u2666KeySquare\r\nPause \u2666ActionMiddle\r\nShift
+      \u2666Shift \r\nLeftControl \u2666Ctrl\r\nSpace \u2666Space\r\nSpace \u2666jump\r\nLeftAlt
+      \u2666Alt\r\nTab \u2666Tab\r\nHome \u2666Home\r\nPause \u2666TestMacro\r\nPageDown
+      \u2666 PageDown\r\nPageUp \u2666 PageUp\r\n \r\nApplication \u2666SpecialMenu\r\nBackspace
+      \u2666Backspace\r\n\r\nLeft \u2666  ArrowLeft\r\nRight\u2666  ArrowRight\r\nDown
+      \u2666  ArrowDown\r\nUp   \u2666  ArrowUp\r\n\r\nQ \u2666 moveleft \r\nD \u2666
+      moveright \r\nZ \u2666 moveforward \r\nS \u2666 movebackward\r\n\r\n\r\nA 
+      \u2666  PowerTopLeft\r\nE  \u2666  PowerTopRight\r\nR  \u2666  PowerTopRightRight\r\nF 
+      \u2666  PowerMidRight\r\nC  \u2666  PowerDownRight\r\n\r\n\r\nMouseLeft\u2666LeftClick\r\nMouseRight\u2666RightClick\r\nMouseMiddle\u2666MiddleClick\r\n\r\n\r\nH
+      \u2666  BotOne\r\nJ \u2666  BotTwo\r\nK \u2666  BotThree\r\nL \u2666  BotFour\r\nM
+      \u2666  BotFive\r\nNumPadDivide \u2666ActionLeft\r\nNumPadMultiply \u2666ActionRight\r\nNumPadSubstract
+      \u2666ActionUp\r\nNumPadAdd \u2666ActionDown\r\nPageUp \u2666PageUp\r\nPageDown
+      \u2666PageDown\r\nWinUS_OEM_7_Quote\u2666KeySquare\r\nPause \u2666ActionMiddle\r\nShift
+      \u2666Shift \r\nLeftControl \u2666Ctrl\r\nSpace \u2666Space\r\nSpace \u2666jump\r\nLeftAlt
+      \u2666Alt\r\nTab \u2666Tab\r\nHome \u2666Home\r\nPause \u2666TestMacro\r\nPageDown
+      \u2666 PageDown\r\nPageUp \u2666 PageUp\r\n \r\nApplication \u2666SpecialMenu\r\nBackspace
+      \u2666Backspace\r\n\r\nLeft \u2666  ArrowLeft\r\nRight\u2666  ArrowRight\r\nDown
+      \u2666  ArrowDown\r\nUp   \u2666  ArrowUp\r\n\r\nQ \u2666 moveleft \r\nD \u2666
+      moveright \r\nZ \u2666 moveforward \r\nS \u2666 movebackward\r\n\r\n\r\nA 
+      \u2666  PowerTopLeft\r\nE  \u2666  PowerTopRight\r\nR  \u2666  PowerTopRightRight\r\nF 
+      \u2666  PowerMidRight\r\nC  \u2666  PowerDownRight\r\n\r\n\r\nMouseLeft\u2666LeftClick\r\nMouseRight\u2666RightClick\r\nMouseMiddle\u2666MiddleClick\r\n\r\n\r\nH
+      \u2666  BotOne\r\nJ \u2666  BotTwo\r\nK \u2666  BotThree\r\nL \u2666  BotFour\r\nM
+      \u2666  BotFive"
+  - m_extensionWithDot: 
+    m_sourceFiles: []
+    m_textMerged: "aoe4 +  xm\u21931000 + xal \u2666 winutility:savefocusas:bot2
+      \u2666 \u2617TriggerOnTrue\r\n\r\nwow +  xm\u21931000 + xal \u2666 winutility:savefocusas:bot2
+      \u2666 \u2617TriggerOnTrue\r\nwow +  xm\u21931000 +  xar \u2666 winutility:savefocusas:bot3
+      \u2666 \u2617TriggerOnTrue\r\nwow +  xm\u21931000 + xad \u2666 winutility:savefocusas:bot4
+      \u2666 \u2617TriggerOnTrue\r\nwow +  xm\u21931000 +  xau  \u2666 winutility:savefocusas:bot5
+      \u2666 \u2617TriggerOnTrue\r\n\r\nFootPadLeft\u2666winutility:savefocusas:crash\u2666
+      \u2617TriggerOnTrue\r\nFootPadRight\u2666winutility:setfocuson:crash\u2666
+      \u2617TriggerOnTrue\r\ncrash +  footsustain  \u2666 jomi:a\u2193\u231B250 a\u2191
+      \u2666 \u2617TriggerOnTrue\r\ncrash +  footsustain \u2666 jomi:a\u2193 \u231B250
+      a\u2191 \u2666 \u2617TriggerOnFalse\r\ncrash +  FootPadrightdown  \u2666jomi:space\u2193
+      \u231B400 space\u2191 \u231B40 space\u2193 \u231B400 space\u2191  e\u2193 \u231B250
+      e\u2191  \u2666 \u2617TriggerOnTrue\r\ncrash +  FootPadrightup  \u2666jomi:space\u2193
+      \u231B40 space\u2191  e\u2193 \u231B250r e\u2191   \u2666 \u2617TriggerOnTrue\r\ncrash
+      +  FootPadleftup \u2666jomi: r\u2193 \u231B250 r\u2191  \u2666 \u2617TriggerOnTrue\r\ncrash
+      +  footpadleftup  \u2666jomi:r\u2193 \u231B250 r\u2191  \u2666 \u2617TriggerOnFalse\r\ncrash
+      +  FootPadleftdown \u2666jomi: r\u2193 \u231B250 r\u2191  \u2666 \u2617TriggerOnTrue\r\ncrash
+      +  footpadleftdown  \u2666jomi:r\u2193 \u231B250 r\u2191  \u2666 \u2617TriggerOnFalse\r\n\r\n\r\nftl
+      +  footsustain  \u2666 jomi:space\u2193\u231B250 space\u2191 \u2666 \u2617TriggerOnTrue\r\nftl
+      +  footsustain \u2666 jomi: space\u2193 \u231B250 space\u2191 \u2666 \u2617TriggerOnFalse\r\n//ftl
+      +  FootPadrightdown  \u2666jomi:1\u2193 \u231B400 1\u2191   leftclick\u2193
+      \u231B250 leftclick\u2191  \u2666 \u2617TriggerOnTrue\r\nftl +  FootPadrightup 
+      \u2666jomi:space\u2193 \u231B40 space\u2191    \u2666 \u2617TriggerOnTrue\r\nftl
+      +  FootPadrightup  \u2666jomi:space\u2193 \u231B40 space\u2191    \u2666 \u2617TriggerOnFalse\r\n//ftl
+      +  FootPadleftup \u2666jomi: 3\u2193 \u231B250 3\u2191  leftclick\u2193 \u231B250
+      leftclick\u2191 \u2666 \u2617TriggerOnTrue\r\n//ftl +  FootPadleftdown \u2666jomi:
+      4\u2193 \u231B250 4\u2191 leftclick\u2193 \u231B250 leftclick\u2191  \u2666
+      \u2617TriggerOnTrue\r\n\r\nftl +  FootPadRight0  \u2666jomi:1\u2193 \u231B4
+      1\u2191   leftclick\u2193 \u231B25 leftclick\u2191  \u2666 \u2617TriggerOnTrue\r\nftl
+      +  FootPadRight1  \u2666jomi:2\u2193 \u231B4 2\u2191    leftclick\u2193 \u231B25
+      leftclick\u2191  \u2666 \u2617TriggerOnTrue\r\nftl +  FootPadRight2 \u2666jomi:
+      3\u2193 \u231B4 3\u2191  leftclick\u2193 \u231B20 leftclick\u2191 \u2666 \u2617TriggerOnTrue\r\nftl
+      +  FootPadRight3 \u2666jomi: 4\u2193 \u231B4 4\u2191 leftclick\u2193 \u231B25
+      leftclick\u2191  \u2666 \u2617TriggerOnTrue\r\n\r\n!xm + xal \u2666 macro:bot:select2
+      \u2666 \u2617TriggerOnTrue\r\n!xm + xar \u2666 macro:bot:select3 \u2666 \u2617TriggerOnTrue\r\n!xm
+      + xad \u2666 macro:bot:select4 \u2666 \u2617TriggerOnTrue\r\n!xm + xau \u2666
+      macro:bot:select5 \u2666 \u2617TriggerOnTrue\r\n\r\n  xsbl \u2666macro:boxes:fivebotfollow
+      \u2666 \u2617TriggerOnTrue\r\n  xbr \u2666macro:boxes:fivebotloadsoulattack\u2666
+      \u2617TriggerOnTrue\r\n  xbd \u2666macro:boxes:fivebotquickattack\u2666 \u2617TriggerOnTrue\r\n 
+      xbl \u2666macro:boxes:fivebotloot\u2666 \u2617TriggerOnTrue\r\n  \r\n  xsbr
+      \u2666macro:boxes:moveinline\u2666 \u2617TriggerOnTrue\r\n  xbu \u2666macro:boxes:fivebotinvokepet\u2666
+      \u2617TriggerOnTrue\r\n  xtr \u2666macro:boxes:moveinpentagra\u2666 \u2617TriggerOnTrue\r\n 
+      xs  \u2666 macro:boxes:defaultfivebotposition\u2666 \u2617TriggerOnTrue\r\n\r\n\r\n\r\nlol
+      +  FootPadLD \u2666jomi: 1\u2193 \u231B4 1\u2191 leftclick\u2193 \u231B25 leftclick\u2191 
+      \u2666 \u2617TriggerOnTrue\r\nlol +  FootPadLT \u2666jomi: 2\u2193 \u231B4
+      2\u2191 leftclick\u2193 \u231B25 leftclick\u2191  \u2666 \u2617TriggerOnTrue\r\nlol
+      +  FootPadRD \u2666jomi: s\u2193 \u231B4 s\u2191 \u2666 \u2617TriggerOnTrue\r\nlol
+      +  FootPadRT \u2666jomi: 1\u2193 \u231B4 1\u2191 \u2666 \u2617TriggerOnTrue\r\n\u27A4
+      \u2617 | \u2193 \u2191 \u2666\r\nTestMacro \u2666 bool:turnaroundbrainlessbots:switch    
+      \u2666 \u2617TriggerOnTrue \r\nturnaroundbrainlessbots \u2666 macro:boxes:fivebotattack
+      \u2666 \u2617TriggerOnTrue \u2617LoopOnTrue 1500\r\n//turnaroundbrainlessbots
+      \u2666 macro:boxes:fivebotheal \u2666 \u2617TriggerOnTrue \u2617LoopOnTrue
+      10537\r\n//turnaroundbrainlessbots \u2666 macro:boxes:fivebotloot \u2666 \u2617TriggerOnTrue
+      \u2617LoopOnTrue 60453\r\n//turnaroundbrainlessbots \u2666 macro:boxes:fivebotinvokepet
+      \u2666 \u2617TriggerOnTrue \u2617LoopOnTrue 30123\r\n\r\nwow +  shift + botone
+      \u2666 winutility:savefocusas:bot1 \u2666 \u2617TriggerOnTrue\r\nwow +  shift
+      + bottwo \u2666 winutility:savefocusas:bot2 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  shift + botthree \u2666 winutility:savefocusas:bot3 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  shift + botfour \u2666 winutility:savefocusas:bot4 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  shift + botfive \u2666 winutility:savefocusas:bot5 \u2666 \u2617TriggerOnTrue\r\n\r\n\r\n!left
+      +  !right + !up + !down \u2666 jomi: space\u2193 space \u2191\u2666  \u2617LoopOnTrue
+      15000 \r\n\r\nwow +  !shift + botone\u2666 macro:bot:select1 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  !shift + bottwo \u2666 macro:bot:select2 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  !shift + botthree \u2666 macro:bot:select3 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  !shift + botfour \u2666 macro:bot:select4 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  !shift + botfive \u2666 macro:bot:select5 \u2666 \u2617TriggerOnTrue\r\n\r\n\r\nwow
+      + shift + ArrowUp\u2666winutility:savefocusas:healer \u2666 \u2617TriggerOnTrue\r\n//shift
+      + ArrowUp\u2666winutility:changetitle:healer:World of Warcraft\u2666 \u2617TriggerOnTrue\r\nwow
+      +shift + ArrowLeft \u2666winutility:savefocusas:hunterone \u2666 \u2617TriggerOnTrue\r\nwow
+      +shift + ArrowRight \u2666winutility:savefocusas:huntertwo \u2666 \u2617TriggerOnTrue\r\n\r\n//wow
+      +!shift+ ArrowUp \u2666winutility:setfocuson:healer \u2666 \u2617TriggerOnTrue\r\n//wow+
+      !shift+ ArrowLeft \u2666winutility:setfocuson:hunterone \u2666 \u2617TriggerOnTrue\r\n//wow
+      +!shift+ ArrowRight \u2666winutility:setfocuson:huntertwo \u2666 \u2617TriggerOnTrue\r\n//\r\n////wow
+      + ArrowDown \u2666 macro:boxes:defaultthree \u2666 \u2617TriggerOn\"True\r\n////wow
+      + ArrowDown \u2666 macro:boxes:largethreehealer \u2666 \u2617TriggerOnTrue\r\n//wow
+      + ArrowDown \u2666 macro:boxes:defaultfivebotposition \u2666 \u2617TriggerOnTrue\r\n////wow
+      + ArrowDown \u2666 macro:boxes:largethreehunterone \u2666 \u2617TriggerOnTrue\r\n////wow
+      + ArrowDown \u2666 macro:boxes:largethreehuntertwo \u2666 \u2617TriggerOnTrue\r\n//wow
+      + space \u2666 macro:box:alljump \u2666 \u2617TriggerOnTrue\r\n////wow + alt
+      \u2666 macro:box:alldance \u2666 \u2617TriggerOnTrue\r\n//\r\n//wow + Home
+      \u2666winutility:savewinpositionas:defaultmain \u2666 \u2617TriggerOnTrue\r\n//wow
+      + Delete \u2666winutility:movetoscreenlocation:healer:defaultmain \u2666 \u2617TriggerOnTrue\r\n//\r\n//wow
+      + actionup\u2666 macro:boxes:fivebotfollow \u2666 \u2617TriggerOnTrue\r\n//wow
+      + actionright \u2666 bool:turnaroundbrainlessbots:switch\u2666 \u2617TriggerOnTrue\r\n//wow
+      + actionleft \u2666 macro:boxes:fivebotloot \u2666 \u2617TriggerOnTrue\r\n//wow
+      + shift \u2666 macro:boxes:fivebotloadsoulattack \u2666 \u2617TriggerOnTrue\r\n//wow
+      + ctrl \u2666 macro:boxes:fivebotquickattack \u2666 \u2617TriggerOnTrue\r\n//wow
+      + jump \u2666 macro:boxes:fivebotloot \u2666 \u2617TriggerOnTrue\r\n\r\n//
+      !footlt \u2666 bool:focushunterone:true \u2666 \u2617TriggerOnTrue\r\n// !footlt
+      \u2666 bool:focushunterone:false \u2666 \u2617TriggerOnFalse\r\n//\r\n// !footlt
+      \u2666 bool:focushealer:false \u2666 \u2617TriggerOnTrue\r\n// !footlt \u2666
+      bool:focushealer:true \u2666 \u2617TriggerOnFalse\r\n//\r\n// !footrt \u2666
+      bool:focushuntertwo:true \u2666 \u2617TriggerOnTrue\r\n// !footrt \u2666 bool:focushuntertwo:false
+      \u2666 \u2617TriggerOnFalse\r\n//\r\n// !footrt \u2666 bool:focushealer:false
+      \u2666 \u2617TriggerOnTrue\r\n// !footrt \u2666 bool:focushealer:true \u2666
+      \u2617TriggerOnFalse\r\n// \r\n//\r\n// !footlt \u2666 bool:hunterspam:true
+      \u2666 \u2617TriggerOnTrue\r\n// !footlt \u2666 bool:hunterspam:false \u2666
+      \u2617TriggerOnFalse\r\n// !footrt \u2666 bool:hunterspam:true \u2666 \u2617TriggerOnTrue\r\n//
+      !footrt \u2666 bool:hunterspam:false \u2666 \u2617TriggerOnFalse\r\n//\r\n//!footld
+      \u2666macro:box:allfollow \u2666 \u2617TriggerOnTrue\r\n//!footrd \u2666macro:box:allloot
+      \u2666 \u2617TriggerOnTrue\r\n\r\n focushunterone \u2666 macro:box:focushunterone
+      \u2666 \u2617TriggerOnTrue\r\n focushuntertwo \u2666 macro:box:focushuntertwo
+      \u2666 \u2617TriggerOnTrue\r\n focushealer \u2666 macro:box:focushealer \u2666
+      \u2617TriggerOnTrue\r\n\r\n//wow + ctrl \u2666 bool:attackmode:switch \u2666
+      \u2617TriggerOnTrue\r\n\r\n//\r\n//wow +usingfoot+ footlt\u2191100 \u2666 
+      jomiraw:ms:l\u2666 \u2617TriggerOnTrue\r\n//\r\n\r\n\r\n\r\n\r\nwow +  xm\u21931000
+      + xal \u2666 winutility:savefocusas:bot2 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  xm\u21931000 +  xar \u2666 winutility:savefocusas:bot3 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  xm\u21931000 + xad \u2666 winutility:savefocusas:bot4 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  xm\u21931000 +  xau  \u2666 winutility:savefocusas:bot5 \u2666 \u2617TriggerOnTrue\r\n\r\nFootPadLeft\u2666winutility:savefocusas:crash\u2666
+      \u2617TriggerOnTrue\r\nFootPadRight\u2666winutility:setfocuson:crash\u2666
+      \u2617TriggerOnTrue\r\ncrash +  footsustain  \u2666 jomi:a\u2193\u231B250 a\u2191
+      \u2666 \u2617TriggerOnTrue\r\ncrash +  footsustain \u2666 jomi:a\u2193 \u231B250
+      a\u2191 \u2666 \u2617TriggerOnFalse\r\ncrash +  FootPadrightdown  \u2666jomi:space\u2193
+      \u231B400 space\u2191 \u231B40 space\u2193 \u231B400 space\u2191  e\u2193 \u231B250
+      e\u2191  \u2666 \u2617TriggerOnTrue\r\ncrash +  FootPadrightup  \u2666jomi:space\u2193
+      \u231B40 space\u2191  e\u2193 \u231B250r e\u2191   \u2666 \u2617TriggerOnTrue\r\ncrash
+      +  FootPadleftup \u2666jomi: r\u2193 \u231B250 r\u2191  \u2666 \u2617TriggerOnTrue\r\ncrash
+      +  footpadleftup  \u2666jomi:r\u2193 \u231B250 r\u2191  \u2666 \u2617TriggerOnFalse\r\ncrash
+      +  FootPadleftdown \u2666jomi: r\u2193 \u231B250 r\u2191  \u2666 \u2617TriggerOnTrue\r\ncrash
+      +  footpadleftdown  \u2666jomi:r\u2193 \u231B250 r\u2191  \u2666 \u2617TriggerOnFalse\r\n\r\n\r\nftl
+      +  footsustain  \u2666 jomi:space\u2193\u231B250 space\u2191 \u2666 \u2617TriggerOnTrue\r\nftl
+      +  footsustain \u2666 jomi: space\u2193 \u231B250 space\u2191 \u2666 \u2617TriggerOnFalse\r\n//ftl
+      +  FootPadrightdown  \u2666jomi:1\u2193 \u231B400 1\u2191   leftclick\u2193
+      \u231B250 leftclick\u2191  \u2666 \u2617TriggerOnTrue\r\nftl +  FootPadrightup 
+      \u2666jomi:space\u2193 \u231B40 space\u2191    \u2666 \u2617TriggerOnTrue\r\nftl
+      +  FootPadrightup  \u2666jomi:space\u2193 \u231B40 space\u2191    \u2666 \u2617TriggerOnFalse\r\n//ftl
+      +  FootPadleftup \u2666jomi: 3\u2193 \u231B250 3\u2191  leftclick\u2193 \u231B250
+      leftclick\u2191 \u2666 \u2617TriggerOnTrue\r\n//ftl +  FootPadleftdown \u2666jomi:
+      4\u2193 \u231B250 4\u2191 leftclick\u2193 \u231B250 leftclick\u2191  \u2666
+      \u2617TriggerOnTrue\r\n\r\nftl +  FootPadRight0  \u2666jomi:1\u2193 \u231B4
+      1\u2191   leftclick\u2193 \u231B25 leftclick\u2191  \u2666 \u2617TriggerOnTrue\r\nftl
+      +  FootPadRight1  \u2666jomi:2\u2193 \u231B4 2\u2191    leftclick\u2193 \u231B25
+      leftclick\u2191  \u2666 \u2617TriggerOnTrue\r\nftl +  FootPadRight2 \u2666jomi:
+      3\u2193 \u231B4 3\u2191  leftclick\u2193 \u231B20 leftclick\u2191 \u2666 \u2617TriggerOnTrue\r\nftl
+      +  FootPadRight3 \u2666jomi: 4\u2193 \u231B4 4\u2191 leftclick\u2193 \u231B25
+      leftclick\u2191  \u2666 \u2617TriggerOnTrue\r\n\r\n!xm + xal \u2666 macro:bot:select2
+      \u2666 \u2617TriggerOnTrue\r\n!xm + xar \u2666 macro:bot:select3 \u2666 \u2617TriggerOnTrue\r\n!xm
+      + xad \u2666 macro:bot:select4 \u2666 \u2617TriggerOnTrue\r\n!xm + xau \u2666
+      macro:bot:select5 \u2666 \u2617TriggerOnTrue\r\n\r\n  xsbl \u2666macro:boxes:fivebotfollow
+      \u2666 \u2617TriggerOnTrue\r\n  xbr \u2666macro:boxes:fivebotloadsoulattack\u2666
+      \u2617TriggerOnTrue\r\n  xbd \u2666macro:boxes:fivebotquickattack\u2666 \u2617TriggerOnTrue\r\n 
+      xbl \u2666macro:boxes:fivebotloot\u2666 \u2617TriggerOnTrue\r\n  \r\n  xsbr
+      \u2666macro:boxes:moveinline\u2666 \u2617TriggerOnTrue\r\n  xbu \u2666macro:boxes:fivebotinvokepet\u2666
+      \u2617TriggerOnTrue\r\n  xtr \u2666macro:boxes:moveinpentagra\u2666 \u2617TriggerOnTrue\r\n 
+      xs  \u2666 macro:boxes:defaultfivebotposition\u2666 \u2617TriggerOnTrue\r\n\r\n\r\n\r\nlol
+      +  FootPadLD \u2666jomi: 1\u2193 \u231B4 1\u2191 leftclick\u2193 \u231B25 leftclick\u2191 
+      \u2666 \u2617TriggerOnTrue\r\nlol +  FootPadLT \u2666jomi: 2\u2193 \u231B4
+      2\u2191 leftclick\u2193 \u231B25 leftclick\u2191  \u2666 \u2617TriggerOnTrue\r\nlol
+      +  FootPadRD \u2666jomi: s\u2193 \u231B4 s\u2191 \u2666 \u2617TriggerOnTrue\r\nlol
+      +  FootPadRT \u2666jomi: 1\u2193 \u231B4 1\u2191 \u2666 \u2617TriggerOnTrue\r\n\r\nwow
+      +  xm\u21931000 + xal \u2666 winutility:savefocusas:bot2 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  xm\u21931000 +  xar \u2666 winutility:savefocusas:bot3 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  xm\u21931000 + xad \u2666 winutility:savefocusas:bot4 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  xm\u21931000 +  xau  \u2666 winutility:savefocusas:bot5 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  xm\u21931000 +  !xau + !xad + !xal + !xar  \u2666 winutility:savefocusas:bot1
+      \u2666 \u2617TriggerOnTrue\r\n\r\n!xm + xal \u2666 macro:bot:select2 \u2666
+      \u2617TriggerOnTrue\r\n!xm + xar \u2666 macro:bot:select3 \u2666 \u2617TriggerOnTrue\r\n!xm
+      + xad \u2666 macro:bot:select4 \u2666 \u2617TriggerOnTrue\r\n!xm + xau \u2666
+      macro:bot:select5 \u2666 \u2617TriggerOnTrue\r\n\r\n  xsbl \u2666macro:boxes:fivebotfollow
+      \u2666 \u2617TriggerOnTrue\r\n  xbr \u2666macro:boxes:fivebotloadsoulattack\u2666
+      \u2617TriggerOnTrue\r\n  xbd \u2666macro:boxes:fivebotquickattack\u2666 \u2617TriggerOnTrue\r\n 
+      xbl \u2666macro:boxes:fivebotloot\u2666 \u2617TriggerOnTrue\r\n  \r\n  xsbr
+      \u2666macro:boxes:moveinline\u2666 \u2617TriggerOnTrue\r\n  xbu \u2666macro:boxes:fivebotinvokepet\u2666
+      \u2617TriggerOnTrue\r\n  xtr \u2666macro:boxes:moveinpentagra\u2666 \u2617TriggerOnTrue\r\n 
+      xs  \u2666 macro:boxes:defaultfivebotposition\u2666 \u2617TriggerOnTrue\r\naoe4
+      +  xm\u21931000 + xal \u2666 winutility:savefocusas:bot2 \u2666 \u2617TriggerOnTrue\r\n\r\nwow
+      +  xm\u21931000 + xal \u2666 winutility:savefocusas:bot2 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  xm\u21931000 +  xar \u2666 winutility:savefocusas:bot3 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  xm\u21931000 + xad \u2666 winutility:savefocusas:bot4 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  xm\u21931000 +  xau  \u2666 winutility:savefocusas:bot5 \u2666 \u2617TriggerOnTrue\r\n\r\n//FootPadLeft\u2666winutility:savefocusas:crash\u2666
+      \u2617TriggerOnTrue\r\n//FootPadRight\u2666winutility:setfocuson:crash\u2666
+      \u2617TriggerOnTrue\r\ncrash +  footsustain  \u2666 jomi:a\u2193\u231B250 a\u2191
+      \u2666 \u2617TriggerOnTrue\r\ncrash +  footsustain \u2666 jomi:a\u2193 \u231B250
+      a\u2191 \u2666 \u2617TriggerOnFalse\r\ncrash +  FootPadrightdown  \u2666jomi:space\u2193
+      \u231B400 space\u2191 \u231B40 space\u2193 \u231B400 space\u2191  e\u2193 \u231B250
+      e\u2191  \u2666 \u2617TriggerOnTrue\r\ncrash +  FootPadrightup  \u2666jomi:space\u2193
+      \u231B40 space\u2191  e\u2193 \u231B250r e\u2191   \u2666 \u2617TriggerOnTrue\r\ncrash
+      +  FootPadleftup \u2666jomi: r\u2193 \u231B250 r\u2191  \u2666 \u2617TriggerOnTrue\r\ncrash
+      +  footpadleftup  \u2666jomi:r\u2193 \u231B250 r\u2191  \u2666 \u2617TriggerOnFalse\r\ncrash
+      +  FootPadleftdown \u2666jomi: r\u2193 \u231B250 r\u2191  \u2666 \u2617TriggerOnTrue\r\ncrash
+      +  footpadleftdown  \u2666jomi:r\u2193 \u231B250 r\u2191  \u2666 \u2617TriggerOnFalse\r\n\r\n\r\nftl
+      +  footsustain  \u2666 jomi:space\u2193\u231B250 space\u2191 \u2666 \u2617TriggerOnTrue\r\nftl
+      +  footsustain \u2666 jomi: space\u2193 \u231B250 space\u2191 \u2666 \u2617TriggerOnFalse\r\n//ftl
+      +  FootPadrightdown  \u2666jomi:1\u2193 \u231B400 1\u2191   leftclick\u2193
+      \u231B250 leftclick\u2191  \u2666 \u2617TriggerOnTrue\r\nftl +  FootPadrightup 
+      \u2666jomi:space\u2193 \u231B40 space\u2191    \u2666 \u2617TriggerOnTrue\r\nftl
+      +  FootPadrightup  \u2666jomi:space\u2193 \u231B40 space\u2191    \u2666 \u2617TriggerOnFalse\r\n//ftl
+      +  FootPadleftup \u2666jomi: 3\u2193 \u231B250 3\u2191  leftclick\u2193 \u231B250
+      leftclick\u2191 \u2666 \u2617TriggerOnTrue\r\n//ftl +  FootPadleftdown \u2666jomi:
+      4\u2193 \u231B250 4\u2191 leftclick\u2193 \u231B250 leftclick\u2191  \u2666
+      \u2617TriggerOnTrue\r\n\r\nftl +  FootPadRight0  \u2666jomi:1\u2193 \u231B4
+      1\u2191   leftclick\u2193 \u231B25 leftclick\u2191  \u2666 \u2617TriggerOnTrue\r\nftl
+      +  FootPadRight1  \u2666jomi:2\u2193 \u231B4 2\u2191    leftclick\u2193 \u231B25
+      leftclick\u2191  \u2666 \u2617TriggerOnTrue\r\nftl +  FootPadRight2 \u2666jomi:
+      3\u2193 \u231B4 3\u2191  leftclick\u2193 \u231B20 leftclick\u2191 \u2666 \u2617TriggerOnTrue\r\nftl
+      +  FootPadRight3 \u2666jomi: 4\u2193 \u231B4 4\u2191 leftclick\u2193 \u231B25
+      leftclick\u2191  \u2666 \u2617TriggerOnTrue\r\n\r\n//!xm + xal \u2666 macro:bot:select2
+      \u2666 \u2617TriggerOnTrue\r\n//!xm + xar \u2666 macro:bot:select3 \u2666 \u2617TriggerOnTrue\r\n//!xm
+      + xad \u2666 macro:bot:select4 \u2666 \u2617TriggerOnTrue\r\n//!xm + xau \u2666
+      macro:bot:select5 \u2666 \u2617TriggerOnTrue\r\n\r\n // xsbl \u2666macro:boxes:fivebotfollow
+      \u2666 \u2617TriggerOnTrue\r\n // xbr \u2666macro:boxes:fivebotloadsoulattack\u2666
+      \u2617TriggerOnTrue\r\n // xbd \u2666macro:boxes:fivebotquickattack\u2666 \u2617TriggerOnTrue\r\n
+      // xbl \u2666macro:boxes:fivebotloot\u2666 \u2617TriggerOnTrue\r\n  \r\n //
+      xsbr \u2666macro:boxes:moveinline\u2666 \u2617TriggerOnTrue\r\n  //xbu \u2666macro:boxes:fivebotinvokepet\u2666
+      \u2617TriggerOnTrue\r\n // xtr \u2666macro:boxes:moveinpentagra\u2666 \u2617TriggerOnTrue\r\n
+      // xs  \u2666 macro:boxes:defaultfivebotposition\u2666 \u2617TriggerOnTrue\r\n\r\n\r\n\r\nlol
+      +  FootPadLD \u2666jomi: 1\u2193 \u231B4 1\u2191 leftclick\u2193 \u231B25 leftclick\u2191 
+      \u2666 \u2617TriggerOnTrue\r\nlol +  FootPadLT \u2666jomi: 2\u2193 \u231B4
+      2\u2191 leftclick\u2193 \u231B25 leftclick\u2191  \u2666 \u2617TriggerOnTrue\r\nlol
+      +  FootPadRD \u2666jomi: s\u2193 \u231B4 s\u2191 \u2666 \u2617TriggerOnTrue\r\nlol
+      +  FootPadRT \u2666jomi: 1\u2193 \u231B4 1\u2191 \u2666 \u2617TriggerOnTrue\r\n\u27A4
+      \u2617 | \u2193 \u2191 \u2666\r\n//TestMacro \u2666 bool:turnaroundbrainlessbots:switch    
+      \u2666 \u2617TriggerOnTrue \r\n//turnaroundbrainlessbots \u2666 macro:boxes:fivebotattack
+      \u2666 \u2617TriggerOnTrue \u2617LoopOnTrue 1500\r\n//turnaroundbrainlessbots
+      \u2666 macro:boxes:fivebotheal \u2666 \u2617TriggerOnTrue \u2617LoopOnTrue
+      10537\r\n//turnaroundbrainlessbots \u2666 macro:boxes:fivebotloot \u2666 \u2617TriggerOnTrue
+      \u2617LoopOnTrue 60453\r\n//turnaroundbrainlessbots \u2666 macro:boxes:fivebotinvokepet
+      \u2666 \u2617TriggerOnTrue \u2617LoopOnTrue 30123\r\n\r\nwow +  shift + botone
+      \u2666 winutility:savefocusas:bot1 \u2666 \u2617TriggerOnTrue\r\nwow +  shift
+      + bottwo \u2666 winutility:savefocusas:bot2 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  shift + botthree \u2666 winutility:savefocusas:bot3 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  shift + botfour \u2666 winutility:savefocusas:bot4 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  shift + botfive \u2666 winutility:savefocusas:bot5 \u2666 \u2617TriggerOnTrue\r\n\r\n\r\n//!left
+      +  !right + !up + !down \u2666 jomi: space\u2193 space \u2191\u2666  \u2617LoopOnTrue
+      15000 \r\n\r\nwow +  !shift + botone\u2666 macro:bot:select1 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  !shift + bottwo \u2666 macro:bot:select2 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  !shift + botthree \u2666 macro:bot:select3 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  !shift + botfour \u2666 macro:bot:select4 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  !shift + botfive \u2666 macro:bot:select5 \u2666 \u2617TriggerOnTrue\r\n\r\n\r\nwow
+      + shift + ArrowUp\u2666winutility:savefocusas:healer \u2666 \u2617TriggerOnTrue\r\n//shift
+      + ArrowUp\u2666winutility:changetitle:healer:World of Warcraft\u2666 \u2617TriggerOnTrue\r\nwow
+      +shift + ArrowLeft \u2666winutility:savefocusas:hunterone \u2666 \u2617TriggerOnTrue\r\nwow
+      +shift + ArrowRight \u2666winutility:savefocusas:huntertwo \u2666 \u2617TriggerOnTrue\r\n\r\n//wow
+      +!shift+ ArrowUp \u2666winutility:setfocuson:healer \u2666 \u2617TriggerOnTrue\r\n//wow+
+      !shift+ ArrowLeft \u2666winutility:setfocuson:hunterone \u2666 \u2617TriggerOnTrue\r\n//wow
+      +!shift+ ArrowRight \u2666winutility:setfocuson:huntertwo \u2666 \u2617TriggerOnTrue\r\n//\r\n////wow
+      + ArrowDown \u2666 macro:boxes:defaultthree \u2666 \u2617TriggerOn\"True\r\n////wow
+      + ArrowDown \u2666 macro:boxes:largethreehealer \u2666 \u2617TriggerOnTrue\r\n//wow
+      + ArrowDown \u2666 macro:boxes:defaultfivebotposition \u2666 \u2617TriggerOnTrue\r\n////wow
+      + ArrowDown \u2666 macro:boxes:largethreehunterone \u2666 \u2617TriggerOnTrue\r\n////wow
+      + ArrowDown \u2666 macro:boxes:largethreehuntertwo \u2666 \u2617TriggerOnTrue\r\n//wow
+      + space \u2666 macro:box:alljump \u2666 \u2617TriggerOnTrue\r\n////wow + alt
+      \u2666 macro:box:alldance \u2666 \u2617TriggerOnTrue\r\n//\r\n//wow + Home
+      \u2666winutility:savewinpositionas:defaultmain \u2666 \u2617TriggerOnTrue\r\n//wow
+      + Delete \u2666winutility:movetoscreenlocation:healer:defaultmain \u2666 \u2617TriggerOnTrue\r\n//\r\n//wow
+      + actionup\u2666 macro:boxes:fivebotfollow \u2666 \u2617TriggerOnTrue\r\n//wow
+      + actionright \u2666 bool:turnaroundbrainlessbots:switch\u2666 \u2617TriggerOnTrue\r\n//wow
+      + actionleft \u2666 macro:boxes:fivebotloot \u2666 \u2617TriggerOnTrue\r\n//wow
+      + shift \u2666 macro:boxes:fivebotloadsoulattack \u2666 \u2617TriggerOnTrue\r\n//wow
+      + ctrl \u2666 macro:boxes:fivebotquickattack \u2666 \u2617TriggerOnTrue\r\n//wow
+      + jump \u2666 macro:boxes:fivebotloot \u2666 \u2617TriggerOnTrue\r\n\r\n//
+      !footlt \u2666 bool:focushunterone:true \u2666 \u2617TriggerOnTrue\r\n// !footlt
+      \u2666 bool:focushunterone:false \u2666 \u2617TriggerOnFalse\r\n//\r\n// !footlt
+      \u2666 bool:focushealer:false \u2666 \u2617TriggerOnTrue\r\n// !footlt \u2666
+      bool:focushealer:true \u2666 \u2617TriggerOnFalse\r\n//\r\n// !footrt \u2666
+      bool:focushuntertwo:true \u2666 \u2617TriggerOnTrue\r\n// !footrt \u2666 bool:focushuntertwo:false
+      \u2666 \u2617TriggerOnFalse\r\n//\r\n// !footrt \u2666 bool:focushealer:false
+      \u2666 \u2617TriggerOnTrue\r\n// !footrt \u2666 bool:focushealer:true \u2666
+      \u2617TriggerOnFalse\r\n// \r\n//\r\n// !footlt \u2666 bool:hunterspam:true
+      \u2666 \u2617TriggerOnTrue\r\n// !footlt \u2666 bool:hunterspam:false \u2666
+      \u2617TriggerOnFalse\r\n// !footrt \u2666 bool:hunterspam:true \u2666 \u2617TriggerOnTrue\r\n//
+      !footrt \u2666 bool:hunterspam:false \u2666 \u2617TriggerOnFalse\r\n//\r\n//!footld
+      \u2666macro:box:allfollow \u2666 \u2617TriggerOnTrue\r\n//!footrd \u2666macro:box:allloot
+      \u2666 \u2617TriggerOnTrue\r\n\r\n //focushunterone \u2666 macro:box:focushunterone
+      \u2666 \u2617TriggerOnTrue\r\n //focushuntertwo \u2666 macro:box:focushuntertwo
+      \u2666 \u2617TriggerOnTrue\r\n //focushealer \u2666 macro:box:focushealer \u2666
+      \u2617TriggerOnTrue\r\n\r\n//wow + ctrl \u2666 bool:attackmode:switch \u2666
+      \u2617TriggerOnTrue\r\n\r\n//\r\n//wow +usingfoot+ footlt\u2191100 \u2666 
+      jomiraw:ms:l\u2666 \u2617TriggerOnTrue\r\n//\r\n\r\n\r\n\r\naoe4 +  xm\u21931000
+      + xal \u2666 winutility:savefocusas:bot2 \u2666 \u2617TriggerOnTrue\r\n\r\nwow
+      +  xm\u21931000 + xal \u2666 winutility:savefocusas:bot2 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  xm\u21931000 +  xar \u2666 winutility:savefocusas:bot3 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  xm\u21931000 + xad \u2666 winutility:savefocusas:bot4 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  xm\u21931000 +  xau  \u2666 winutility:savefocusas:bot5 \u2666 \u2617TriggerOnTrue\r\n\r\n//FootPadLeft\u2666winutility:savefocusas:crash\u2666
+      \u2617TriggerOnTrue\r\n//FootPadRight\u2666winutility:setfocuson:crash\u2666
+      \u2617TriggerOnTrue\r\nlol +  xal  \u2666 jomi:s\u2193\u231B50 s\u2191 \u2666
+      \u2617TriggerOnTrue\r\nlol +  xau  \u2666 jomi:2\u2193\u231B50 2\u2191 \u2666
+      \u2617TriggerOnTrue\r\nlol +  xar  \u2666 jomi:d\u2193\u231B50 d\u2191 \u2666
+      \u2617TriggerOnTrue\r\nlol +  xad  \u2666 jomi:f\u2193\u231B50 f\u2191 \u2666
+      \u2617TriggerOnTrue\r\n\r\nlol +  xm  \u2666 jomi:enter\u2193 \u231B50 enter\u2191
+      \u231B50  [[Hello Guys]]  s\u2193 \u231B50 s\u2191 s\u2193 \u231B50 s\u2191
+      \u231B150 enter\u2193 \u231B50 enter\u2191 \u2666 \u2617TriggerOnTrue\r\nlol
+      +  xs  \u2666 jomi:b\u2193\u231B50 b\u2191 \u2666 \u2617TriggerOnTrue\r\n\r\nlol
+      + joyleftup\u2666 jomi:r\u2193 \u2666 \u2617TriggerOnTrue\r\nlol + joyleftleft\u2666
+      jomi:a\u2193 \u2666 \u2617TriggerOnTrue\r\nlol + joyleftdown\u2666 jomi:z\u2193\u2666
+      \u2617TriggerOnTrue\r\nlol + joyleftright\u2666 jomi:e\u2193 \u2666 \u2617TriggerOnTrue\r\nlol
+      + joyleftup\u2666 jomi: r\u2191 \u2666 \u2617TriggerOnFalse\r\nlol + joyleftleft\u2666
+      jomi: a\u2191 \u2666 \u2617TriggerOnFalse\r\nlol + joyleftdown\u2666 jomi:
+      z\u2191 \u2666 \u2617TriggerOnFalse\r\nlol + joyleftright\u2666 jomi:e\u2191
+      \u2666 \u2617TriggerOnFalse\r\n\r\nlol + xsbl\u2666 jomi:f2\u2193 \u231B50
+      f2\u2191 \u231B300 f3\u2193 \u231B50 f3\u2191 \u231B300 f4\u2193 \u231B50 f4\u2191
+      \u231B300 f5\u2193 \u231B50 f5\u2191 \u231B300 f2\u2193 \u231B50 f2\u2191 \u2666
+      \u2617TriggerOnFalse\r\n\r\ncrash +  footsustain \u2666 jomi:a\u2193 \u231B250
+      a\u2191 \u2666 \u2617TriggerOnFalse\r\ncrash +  FootPadrightdown  \u2666jomi:space\u2193
+      \u231B400 space\u2191 \u231B40 space\u2193 \u231B400 space\u2191  e\u2193 \u231B250
+      e\u2191  \u2666 \u2617TriggerOnTrue\r\ncrash +  FootPadrightup  \u2666jomi:space\u2193
+      \u231B40 space\u2191  e\u2193 \u231B250r e\u2191   \u2666 \u2617TriggerOnTrue\r\ncrash
+      +  FootPadleftup \u2666jomi: r\u2193 \u231B250 r\u2191  \u2666 \u2617TriggerOnTrue\r\ncrash
+      +  footpadleftup  \u2666jomi:r\u2193 \u231B250 r\u2191  \u2666 \u2617TriggerOnFalse\r\ncrash
+      +  FootPadleftdown \u2666jomi: r\u2193 \u231B250 r\u2191  \u2666 \u2617TriggerOnTrue\r\ncrash
+      +  footpadleftdown  \u2666jomi:r\u2193 \u231B250 r\u2191  \u2666 \u2617TriggerOnFalse\r\n\r\n\r\nftl
+      +  footsustain  \u2666 jomi:space\u2193\u231B250 space\u2191 \u2666 \u2617TriggerOnTrue\r\nftl
+      +  footsustain \u2666 jomi: space\u2193 \u231B250 space\u2191 \u2666 \u2617TriggerOnFalse\r\n//ftl
+      +  FootPadrightdown  \u2666jomi:1\u2193 \u231B400 1\u2191   leftclick\u2193
+      \u231B250 leftclick\u2191  \u2666 \u2617TriggerOnTrue\r\nftl +  FootPadrightup 
+      \u2666jomi:space\u2193 \u231B40 space\u2191    \u2666 \u2617TriggerOnTrue\r\nftl
+      +  FootPadrightup  \u2666jomi:space\u2193 \u231B40 space\u2191    \u2666 \u2617TriggerOnFalse\r\n//ftl
+      +  FootPadleftup \u2666jomi: 3\u2193 \u231B250 3\u2191  leftclick\u2193 \u231B250
+      leftclick\u2191 \u2666 \u2617TriggerOnTrue\r\n//ftl +  FootPadleftdown \u2666jomi:
+      4\u2193 \u231B250 4\u2191 leftclick\u2193 \u231B250 leftclick\u2191  \u2666
+      \u2617TriggerOnTrue\r\n\r\nftl +  FootPadRight0  \u2666jomi:1\u2193 \u231B4
+      1\u2191   leftclick\u2193 \u231B25 leftclick\u2191  \u2666 \u2617TriggerOnTrue\r\nftl
+      +  FootPadRight1  \u2666jomi:2\u2193 \u231B4 2\u2191    leftclick\u2193 \u231B25
+      leftclick\u2191  \u2666 \u2617TriggerOnTrue\r\nftl +  FootPadRight2 \u2666jomi:
+      3\u2193 \u231B4 3\u2191  leftclick\u2193 \u231B20 leftclick\u2191 \u2666 \u2617TriggerOnTrue\r\nftl
+      +  FootPadRight3 \u2666jomi: 4\u2193 \u231B4 4\u2191 leftclick\u2193 \u231B25
+      leftclick\u2191  \u2666 \u2617TriggerOnTrue\r\n\r\n//!xm + xal \u2666 macro:bot:select2
+      \u2666 \u2617TriggerOnTrue\r\n//!xm + xar \u2666 macro:bot:select3 \u2666 \u2617TriggerOnTrue\r\n//!xm
+      + xad \u2666 macro:bot:select4 \u2666 \u2617TriggerOnTrue\r\n//!xm + xau \u2666
+      macro:bot:select5 \u2666 \u2617TriggerOnTrue\r\n\r\n // xsbl \u2666macro:boxes:fivebotfollow
+      \u2666 \u2617TriggerOnTrue\r\n // xbr \u2666macro:boxes:fivebotloadsoulattack\u2666
+      \u2617TriggerOnTrue\r\n // xbd \u2666macro:boxes:fivebotquickattack\u2666 \u2617TriggerOnTrue\r\n
+      // xbl \u2666macro:boxes:fivebotloot\u2666 \u2617TriggerOnTrue\r\n  \r\n //
+      xsbr \u2666macro:boxes:moveinline\u2666 \u2617TriggerOnTrue\r\n  //xbu \u2666macro:boxes:fivebotinvokepet\u2666
+      \u2617TriggerOnTrue\r\n // xtr \u2666macro:boxes:moveinpentagra\u2666 \u2617TriggerOnTrue\r\n
+      // xs  \u2666 macro:boxes:defaultfivebotposition\u2666 \u2617TriggerOnTrue\r\n\r\n\r\n\r\nlol
+      +  FootPadLD \u2666jomi: 1\u2193 \u231B4 1\u2191 leftclick\u2193 \u231B25 leftclick\u2191 
+      \u2666 \u2617TriggerOnTrue\r\nlol +  FootPadLT \u2666jomi: 2\u2193 \u231B4
+      2\u2191 leftclick\u2193 \u231B25 leftclick\u2191  \u2666 \u2617TriggerOnTrue\r\nlol
+      +  FootPadRD \u2666jomi: s\u2193 \u231B4 s\u2191 \u2666 \u2617TriggerOnTrue\r\nlol
+      +  FootPadRT \u2666jomi: 1\u2193 \u231B4 1\u2191 \u2666 \u2617TriggerOnTrue\r\n\r\nwow
+      +  xm\u21931000 + xal \u2666 winutility:savefocusas:bot2 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  xm\u21931000 +  xar \u2666 winutility:savefocusas:bot3 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  xm\u21931000 + xad \u2666 winutility:savefocusas:bot4 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  xm\u21931000 +  xau  \u2666 winutility:savefocusas:bot5 \u2666 \u2617TriggerOnTrue\r\nwow
+      +  xm\u21931000 +  !xau + !xad + !xal + !xar  \u2666 winutility:savefocusas:bot1
+      \u2666 \u2617TriggerOnTrue\r\n\r\n//!xm + xal \u2666 macro:bot:select2 \u2666
+      \u2617TriggerOnTrue\r\n//!xm + xar \u2666 macro:bot:select3 \u2666 \u2617TriggerOnTrue\r\n//!xm
+      + xad \u2666 macro:bot:select4 \u2666 \u2617TriggerOnTrue\r\n//!xm + xau \u2666
+      macro:bot:select5 \u2666 \u2617TriggerOnTrue\r\n\r\n//  xsbl \u2666macro:boxes:fivebotfollow
+      \u2666 \u2617TriggerOnTrue\r\n // xbr \u2666macro:boxes:fivebotloadsoulattack\u2666
+      \u2617TriggerOnTrue\r\n//  xbd \u2666macro:boxes:fivebotquickattack\u2666 \u2617TriggerOnTrue\r\n
+      // xbl \u2666macro:boxes:fivebotloot\u2666 \u2617TriggerOnTrue\r\n  \r\n //
+      xsbr \u2666macro:boxes:moveinline\u2666 \u2617TriggerOnTrue\r\n // xbu \u2666macro:boxes:fivebotinvokepet\u2666
+      \u2617TriggerOnTrue\r\n // xtr \u2666macro:boxes:moveinpentagra\u2666 \u2617TriggerOnTrue\r\n
+      // xs  \u2666 macro:boxes:defaultfivebotposition\u2666 \u2617TriggerOnTrue\r\n"
+  - m_extensionWithDot: 
+    m_sourceFiles: []
+    m_textMerged: "\u27A4 \u2617 | \u2193 \u2191 \u2666\r\n\r\n//wow + home\u2666
+      jomi: l\u2193 l\u2191  \u2666 \u2617MinTime 0  \u2617MaxTime 400   \u2617TriggerOnReleaseInRange
+      \r\nwow + home \u2666 macro:box:alllogin \u2666 \u2617Time 2000 \u2617TriggerOnRange\r\nwow
+      + home \u2666In 10000|macro:box:validatechamp \u2666 \u2617Time 2000 \u2617TriggerOnRange\r\n\r\n\r\nwow
+      + attackmode + hunterspam \u2666jomi: tab\u2193 tab\u2191 \u2666 \u2617Time
+      200 \u2617TriggerOnRange\r\nwow + attackmode + hunterspam \u2666jomi: NP6\u2193
+      NP6\u2191  F4\u2193 F4\u2191  F5\u2193 F5\u2191 0\u2193 0\u2191\u2666 \u2617Time
+      300 \u2617TriggerOnRange\r\nwow + attackmode + hunterspam \u2666jomi: F10\u2193
+      F10\u2191 \u2666 \u2617Time 1850 \u2617TriggerOnRange\r\nwow + attackmode +
+      hunterspam \u2666jomi: F8\u2193 F8\u2191 \u2666 \u2617Time 3200 \u2617TriggerOnRange\r\nwow
+      + attackmode + hunterspam \u2666jomi: NP8\u2193 NP8\u2191 \u2666 \u2617Time
+      5000 \u2617TriggerOnRange\u27A4 \u2617 | \u2193 \u2191 \u2666\r\n\r\n//wow
+      + home\u2666 jomi: l\u2193 l\u2191  \u2666 \u2617MinTime 0  \u2617MaxTime 400  
+      \u2617TriggerOnReleaseInRange \r\nwow + home \u2666 macro:box:alllogin \u2666
+      \u2617Time 2000 \u2617TriggerOnRange\r\nwow + home \u2666In 10000|macro:box:validatechamp
+      \u2666 \u2617Time 2000 \u2617TriggerOnRange\r\n\r\n\r\nwow + attackmode + hunterspam
+      \u2666jomi: tab\u2193 tab\u2191 \u2666 \u2617Time 200 \u2617TriggerOnRange\r\nwow
+      + attackmode + hunterspam \u2666jomi: NP6\u2193 NP6\u2191  F4\u2193 F4\u2191 
+      F5\u2193 F5\u2191 0\u2193 0\u2191\u2666 \u2617Time 300 \u2617TriggerOnRange\r\nwow
+      + attackmode + hunterspam \u2666jomi: F10\u2193 F10\u2191 \u2666 \u2617Time
+      1850 \u2617TriggerOnRange\r\nwow + attackmode + hunterspam \u2666jomi: F8\u2193
+      F8\u2191 \u2666 \u2617Time 3200 \u2617TriggerOnRange\r\nwow + attackmode +
+      hunterspam \u2666jomi: NP8\u2193 NP8\u2191 \u2666 \u2617Time 5000 \u2617TriggerOnRange\u27A4
+      \u2617 | \u2193 \u2191 \u2666\r\n\r\n//wow + home\u2666 jomi: l\u2193 l\u2191 
+      \u2666 \u2617MinTime 0  \u2617MaxTime 400   \u2617TriggerOnReleaseInRange \r\nwow
+      + home \u2666 macro:box:alllogin \u2666 \u2617Time 2000 \u2617TriggerOnRange\r\nwow
+      + home \u2666In 10000|macro:box:validatechamp \u2666 \u2617Time 2000 \u2617TriggerOnRange\r\n\r\n\r\nwow
+      + attackmode + hunterspam \u2666jomi: tab\u2193 tab\u2191 \u2666 \u2617Time
+      200 \u2617TriggerOnRange\r\nwow + attackmode + hunterspam \u2666jomi: NP6\u2193
+      NP6\u2191  F4\u2193 F4\u2191  F5\u2193 F5\u2191 0\u2193 0\u2191\u2666 \u2617Time
+      300 \u2617TriggerOnRange\r\nwow + attackmode + hunterspam \u2666jomi: F10\u2193
+      F10\u2191 \u2666 \u2617Time 1850 \u2617TriggerOnRange\r\nwow + attackmode +
+      hunterspam \u2666jomi: F8\u2193 F8\u2191 \u2666 \u2617Time 3200 \u2617TriggerOnRange\r\nwow
+      + attackmode + hunterspam \u2666jomi: NP8\u2193 NP8\u2191 \u2666 \u2617Time
+      5000 \u2617TriggerOnRange"
+  - m_extensionWithDot: 
+    m_sourceFiles: []
+    m_textMerged: "1\u2666sbl\u2666XSBL\r\n1\u2666sbr\u2666XSBR\r\n1\u2666pl\u2666XBL\r\n1\u2666pr\u2666XBR\r\n1\u2666pu\u2666XBU\r\n1\u2666pd\u2666XBD\r\n1\u2666al\u2666XAL\r\n1\u2666ar\u2666XAR\r\n1\u2666au\u2666XAU\r\n1\u2666ad\u2666XAD\r\n1\u2666Menu\u2666XM\r\n1\u2666Start\u2666XS\r\n1\u2666jl\u2666XJL\r\n1\u2666jr\u2666XJR\r\n1\u2666tl\u2666XTL\u26660.05\u26661\r\n1\u2666tr\u2666XTR\u26660.05\u26661\r\n1\u2666jlr\u2666JoyLeftRight\u26660.05\u26661\r\n1\u2666jll\u2666JoyLeftLeft\u26660.05\u26661\r\n1\u2666jld\u2666JoyLeftDown\u26660.05\u26661\r\n1\u2666jlu\u2666JoyLeftUp\u26660.05\u26661\r\n1\u2666jrr\u2666JoyRightRight\u26660.05\u26661\r\n1\u2666jrl\u2666JoyRightLeft\u26660.05\u26661\r\n1\u2666jrd\u2666JoyRightDown\u26660.05\u26661\r\n1\u2666jru\u2666JoyRightUp\u26660.05\u26661\r\n1\u2666tl\u2666XTLLow\u26660.0001\u26660.3\r\n1\u2666tr\u2666XTRLow\u26660.0001\u26660.3\r\n1\u2666tl\u2666XTLMedium\u26660.3\u26660.8\r\n1\u2666tr\u2666XTRMedium\u26660.3\u26660.8\r\n1\u2666tl\u2666XTLHight\u26660.8\u26661\r\n1\u2666tr\u2666XTRHight\u26660.8\u266611\u2666sbl\u2666XSBL\r\n1\u2666sbr\u2666XSBR\r\n1\u2666pl\u2666XBL\r\n1\u2666pr\u2666XBR\r\n1\u2666pu\u2666XBU\r\n1\u2666pd\u2666XBD\r\n1\u2666al\u2666XAL\r\n1\u2666ar\u2666XAR\r\n1\u2666au\u2666XAU\r\n1\u2666ad\u2666XAD\r\n1\u2666Menu\u2666XM\r\n1\u2666Start\u2666XS\r\n1\u2666jl\u2666XJL\r\n1\u2666jr\u2666XJR\r\n1\u2666tl\u2666XTL\u26660.05\u26661\r\n1\u2666tr\u2666XTR\u26660.05\u26661\r\n1\u2666jlr\u2666JoyLeftRight\u26660.05\u26661\r\n1\u2666jll\u2666JoyLeftLeft\u26660.05\u26661\r\n1\u2666jld\u2666JoyLeftDown\u26660.05\u26661\r\n1\u2666jlu\u2666JoyLeftUp\u26660.05\u26661\r\n1\u2666jrr\u2666JoyRightRight\u26660.05\u26661\r\n1\u2666jrl\u2666JoyRightLeft\u26660.05\u26661\r\n1\u2666jrd\u2666JoyRightDown\u26660.05\u26661\r\n1\u2666jru\u2666JoyRightUp\u26660.05\u26661\r\n1\u2666tl\u2666XTLLow\u26660.0001\u26660.3\r\n1\u2666tr\u2666XTRLow\u26660.0001\u26660.3\r\n1\u2666tl\u2666XTLMedium\u26660.3\u26660.8\r\n1\u2666tr\u2666XTRMedium\u26660.3\u26660.8\r\n1\u2666tl\u2666XTLHight\u26660.8\u26661\r\n1\u2666tr\u2666XTRHight\u26660.8\u26661"
+  - m_extensionWithDot: 
+    m_sourceFiles: []
+    m_textMerged: "\u2617name Set three window to they place\r\n\u2617callid boxes:defaultfivebotposition\r\n\u219110
+      \u2193100\u2666winutility:movetoscreenlocation:bot1:bot1default\r\n\u219110
+      \u2193100\u2666winutility:movetoscreenlocation:bot2:bot2default\r\n\u219110
+      \u2193100\u2666winutility:movetoscreenlocation:bot3:bot3default\r\n\u219110
+      \u2193100\u2666winutility:movetoscreenlocation:bot4:bot4default\r\n\u219110
+      \u2193100\u2666winutility:movetoscreenlocation:bot5:bot5default \u2617name
+      Set three window to they place\r\n\u2617callid boxes:fivebotattack\r\n\r\n\u219110
+      \u2193100\u2666macro:bot:select1 \r\n\u219110 \u21931600\u2666jomi: \u231B8
+      7\u2193 \u231B50 7\u2191  \r\n\u219110 \u2193100\u2666macro:bot:select1 \r\n\u219110
+      \u2193100\u2666jomi: \u231B10 tab\u2193 \u231B20 tab\u2191 \u231B10  a\u2193
+      \u231B20 a\u2191 8\u2193 \u231B20 8\u2191 3\u2193 \u231B20 3\u2191 1\u2193
+      \u231B20 1\u2191 0\u2193 \u231B20 0\u2191  \r\n\r\n\u219110 \u2193100\u2666macro:bot:select1
+      \r\n\u219110 \u2193100\u2666jomi: \u231B10 tab\u2193 \u231B20 tab\u2191 \u231B10 
+      a\u2193 \u231B20 a\u2191 8\u2193 \u231B20 8\u2191 3\u2193 \u231B20 3\u2191
+      1\u2193 \u231B20 1\u2191 0\u2193 \u231B20 0\u2191  \r\n\u219110 \u2193100\u2666macro:bot:select2\r\n\u219110
+      \u2193100\u2666jomi: \u231B10  tab\u2193 \u231B20 tab\u2191 \u231B10  a\u2193
+      \u231B20 a\u2191 8\u2193 \u231B20 8\u2191 3\u2193 \u231B20 3\u2191 1\u2193
+      \u231B20 1\u2191 0\u2193 \u231B20 0\u2191  \r\n\u219110 \u2193100\u2666macro:bot:select3\r\n\u219110
+      \u2193100\u2666jomi: \u231B10  tab\u2193 \u231B20 tab\u2191 \u231B10  a\u2193
+      \u231B20 a\u2191 8\u2193 \u231B20 8\u2191 3\u2193 \u231B20 3\u2191 1\u2193
+      \u231B20 1\u2191 0\u2193 \u231B20 0\u2191  \r\n\u219110 \u2193100\u2666macro:bot:select4\r\n\u219110
+      \u2193100\u2666jomi: \u231B10  tab\u2193 \u231B20 tab\u2191 \u231B10  a\u2193
+      \u231B20 a\u2191  8\u2193 \u231B20 8\u2191 3\u2193 \u231B20 3\u2191 1\u2193
+      \u231B20 1\u2191 0\u2193 \u231B20 0\u2191  \r\n\u219110 \u2193100\u2666macro:bot:select5\r\n\u219110
+      \u2193100\u2666jomi: \u231B10  tab\u2193 \u231B20 tab\u2191 \u231B10  a\u2193
+      \u231B20 a\u2191 8\u2193 \u231B20 8\u2191 3\u2193 \u231B20 3\u2191 1\u2193
+      \u231B20 1\u2191 0\u2193 \u231B20 0\u2191  \r\n\u219110 \u2193100\u2666macro:bot:select1\r\n\u2617name
+      Set three window to they place\r\n\u2617callid boxes:fivebotfollow\r\n\u219110
+      \u2193100\u2666macro:bot:select1\r\n\u219110 \u2193250\u2666macro:box:followleader\r\n\u219110
+      \u2193100\u2666macro:bot:select2\r\n\u219110 \u2193250\u2666macro:box:followleader\r\n\u219110
+      \u2193100\u2666macro:bot:select3\r\n\u219110 \u2193250\u2666macro:box:followleader\r\n\u219110
+      \u2193100\u2666macro:bot:select4\r\n\u219110 \u2193250\u2666macro:box:followleader\r\n\u219110
+      \u2193100\u2666macro:bot:select5\r\n\u219110 \u2193250\u2666macro:box:followleader\r\n\u219110
+      \u2193100\u2666macro:bot:select1\r\n\u2617name Set three window to they place\r\n\u2617callid
+      boxes:fivebotheal\r\n\u219110 \u2193100\u2666macro:bot:select1\r\n\u219110
+      \u2193100\u2666jomi: 8\u2193 \u231B20 8\u2191 9\u2193 \u231B20 9\u2191  \r\n\u219110
+      \u2193100\u2666macro:bot:select2\r\n\u219110 \u2193100\u2666jomi: 8\u2193 \u231B20
+      8\u2191 9\u2193 \u231B20 9\u2191 \r\n\u219110 \u2193100\u2666macro:bot:select3\r\n\u219110
+      \u2193100\u2666jomi: 8\u2193 \u231B20 8\u2191 9\u2193 \u231B20 9\u2191 \r\n\u219110
+      \u2193100\u2666macro:bot:select4\r\n\u219110 \u2193100\u2666jomi: 8\u2193 \u231B20
+      8\u2191 9\u2193 \u231B20 9\u2191 \r\n\u219110 \u2193100\u2666macro:bot:select5\r\n\u219110
+      \u2193100\u2666jomi: 8\u2193 \u231B20 8\u2191 9\u2193 \u231B20 9\u2191 \r\n\u219110
+      \u2193100\u2666macro:bot:select1\r\n\u2617name Set three window to they place\r\n\u2617callid
+      boxes:fivebotinvokepet\r\n\u219110 \u2193100\u2666macro:bot:select1\r\n\u219110
+      \u2193100\u2666jomi: 3\u2193 \u231B20 3\u2191\r\n\u219110 \u2193100\u2666macro:bot:select2\r\n\u219110
+      \u2193100\u2666jomi: 3\u2193 \u231B20 3\u2191\r\n\u219110 \u2193100\u2666macro:bot:select3\r\n\u219110
+      \u2193100\u2666jomi: 3\u2193 \u231B20 3\u2191 \r\n\u219110 \u2193100\u2666macro:bot:select4\r\n\u219110
+      \u2193100\u2666jomi: 3\u2193 \u231B20 3\u2191\r\n\u219110 \u2193100\u2666macro:bot:select5\r\n\u219110
+      \u2193100\u2666jomi: 3\u2193 \u231B20 3\u2191 \r\n\u219110 \u2193100\u2666macro:bot:select1\r\n\u2617name
+      Set three window to they place\r\n\u2617callid boxes:fivebotloadsoulattack\r\n\u219110
+      \u219310\u2666macro:bot:select1 \r\n\u219110 \u2193300\u2666jomi:  tab\u2193 
+      tab\u2191 \u231B10  a\u2193 \u231B20 a\u2191  0\u2193 \u231B20 0\u2191  \r\n\u219110
+      \u219310\u2666macro:bot:select2\r\n\u219110 \u2193300\u2666jomi:  tab\u2193 
+      tab\u2191 \u231B10  a\u2193 \u231B20 a\u2191  0\u2193 \u231B20 0\u2191   \r\n\u219110
+      \u219310\u2666macro:bot:select3\r\n\u219110 \u2193300\u2666jomi:  tab\u2193 
+      tab\u2191 \u231B10  a\u2193 \u231B20 a\u2191  0\u2193 \u231B20 0\u2191  \r\n\u219110
+      \u219310\u2666macro:bot:select4\r\n\u219110 \u2193300\u2666jomi:  tab\u2193 
+      tab\u2191 \u231B10  a\u2193 \u231B20 a\u2191  0\u2193 \u231B20 0\u2191  \r\n\u219110
+      \u219310\u2666macro:bot:select5\r\n\u219110 \u2193300\u2666jomi:  tab\u2193 
+      tab\u2191 \u231B10  a\u2193 \u231B20 a\u2191  0\u2193 \u231B20 0\u2191   \r\n\u219110
+      \u219310\u2666macro:bot:select1\r\n\u2617name Set three window to they place\r\n\u2617callid
+      boxes:fivebotloot\r\n\u219110 \u2193250\u2666mouseutility:gridleftclick:Bot1center:5:5:5\r\n\u219110
+      \u2193250\u2666mouseutility:gridleftclick:Bot2center:5:5:5\r\n\u219110 \u2193250\u2666mouseutility:gridleftclick:Bot3center:5:5:5\r\n\u219110
+      \u2193250\u2666mouseutility:gridleftclick:Bot4center:5:5:5\r\n\u219110 \u2193250\u2666mouseutility:gridleftclick:Bot5center:5:5:5\r\n\u219110
+      \u2193100\u2666macro:bot:select1\r\n\u2617name Set three window to they place\r\n\u2617callid
+      boxes:fivebotquickattack\r\n\u219110 \u21932\u2666macro:bot:select1 \r\n\u219110
+      \u2193300\u2666jomi:  tab\u2193  tab\u2191 \u231B10  a\u2193 \u231B20 a\u2191 
+      1\u2193 \u231B20 1\u2191  \r\n\u219110 \u21932\u2666macro:bot:select2\r\n\u219110
+      \u2193300\u2666jomi:  tab\u2193  tab\u2191 \u231B10  a\u2193 \u231B20 a\u2191 
+      1\u2193 \u231B20 1\u2191   \r\n\u219110 \u21932\u2666macro:bot:select3\r\n\u219110
+      \u2193300\u2666jomi:  tab\u2193  tab\u2191 \u231B10  a\u2193 \u231B20 a\u2191 
+      1\u2193 \u231B20 1\u2191  \r\n\u219110 \u21932\u2666macro:bot:select4\r\n\u219110
+      \u2193300\u2666jomi:  tab\u2193  tab\u2191 \u231B10  a\u2193 \u231B20 a\u2191 
+      1\u2193 \u231B20 1\u2191  \r\n\u219110 \u21932\u2666macro:bot:select5\r\n\u219110
+      \u2193300\u2666jomi:  tab\u2193  tab\u2191 \u231B10  a\u2193 \u231B20 a\u2191 
+      1\u2193 \u231B20 1\u2191   \r\n\u219110 \u21932\u2666macro:bot:select1\r\n\u2617name
+      Set three window to they place\r\n\u2617callid boxes:largethreehealer\r\n\u219110
+      \u2193100\u2666winutility:setfocuson:hunterone \r\n\u219110 \u2193100\u2666winutility:movetoscreenlocation:hunterone:LargeSmallLeft
+      \r\n\u219110 \u2193100\u2666winutility:setfocuson:huntertwo\r\n\u219110 \u2193100\u2666winutility:movetoscreenlocation:huntertwo:LargeSmallRight  
+      \r\n\u219110 \u2193100\u2666winutility:setfocuson:healer\r\n\u219110 \u2193100\u2666winutility:movetoscreenlocation:healer:LargeMain
+      \u2617name Set three window to they place\r\n\u2617callid boxes:largethreehunterone\r\n\u219110
+      \u2193100\u2666winutility:setfocuson:hunterone \r\n\u219110 \u2193100\u2666winutility:movetoscreenlocation:hunterone:LargeMain
+      \r\n\u219110 \u2193100\u2666winutility:setfocuson:huntertwo\r\n\u219110 \u2193100\u2666winutility:movetoscreenlocation:huntertwo:LargeSmallRight  
+      \r\n\u219110 \u2193100\u2666winutility:setfocuson:healer\r\n\u219110 \u2193100\u2666winutility:movetoscreenlocation:healer:LargeSmallLeft
+      \u2617name Set three window to they place\r\n\u2617callid boxes:moveinline\r\n\u219110
+      \u2193100\u2666macro:bot:select2\r\n\u219110 \u2193250\u2666jomi: w\u2193\u231B100
+      w\u2191\r\n\u219110 \u2193100\u2666macro:bot:select3\r\n\u219110 \u2193250\u2666jomi:
+      w\u2193\u231B200 w\u2191\r\n\u219110 \u2193100\u2666macro:bot:select4\r\n\u219110
+      \u2193250\u2666jomi: x\u2193\u231B200 x\u2191\r\n\u219110 \u2193100\u2666macro:bot:select5\r\n\u219110
+      \u2193250\u2666jomi: x\u2193\u231B100 x\u2191\r\n\u219110 \u2193100\u2666macro:bot:select1\r\n\u2617name
+      Set three window to they place\r\n\u2617callid boxes:moveinpentagra\r\n\u219110
+      \u219350\u2666macro:bot:select2\r\n\u219110 \u219350\u2666macro:bot:select2\r\n\u2191500
+      \u21935000\u2666jomi: q\u2193\u231B70 q\u2191 z\u2193\u231B2200 z\u2191 d\u2193\u231B750
+      d\u2191\r\n\u219110 \u219310\u2666macro:bot:select5\r\n\u2191100  \u21935000\u2666jomi:
+      d\u2193\u231B70 d\u2191 z\u2193\u231B2200 z\u2191 q\u2193\u231B750 q\u2191\r\n\u219110
+      \u219310\u2666macro:bot:select3\r\n\u2191100  \u21935000\u2666jomi: q\u2193\u231B200
+      q\u2191 z\u2193\u231B1200 z\u2191 d\u2193\u231B600 d\u2191\r\n\u219110 \u219310\u2666macro:bot:select4\r\n\u2191100 
+      \u21935000\u2666jomi: d\u2193\u231B200 d\u2191 z\u2193\u231B1200 z\u2191 q\u2193\u231B600
+      q\u2191\r\n\u219110 \u219310\u2666macro:bot:select1\r\n\u2191100  \u21935000\u2666jomi:
+      s\u2193\u231B230 s\u2191\r\n\u2617name Set three window to they place\r\n\u2617callid
+      boxes:defaultthree\r\n\u219110 \u2193100\u2666winutility:setfocuson:hunterone
+      \r\n\u219110 \u2193100\u2666winutility:movetoscreenlocation:hunterone:SecondaryBox
+      \r\n\u219110 \u2193100\u2666winutility:setfocuson:huntertwo\r\n\u219110 \u2193100\u2666winutility:movetoscreenlocation:huntertwo:ThirdBox  
+      \r\n\u219110 \u2193100\u2666winutility:setfocuson:healer\r\n\u219110 \u2193100\u2666winutility:movetoscreenlocation:healer:MainBox
+      \u2617name Set three window to they place\r\n\u2617callid boxes:defaultfivebotposition\r\n\u219110
+      \u2193100\u2666winutility:movetoscreenlocation:bot1:bot1default\r\n\u219110
+      \u2193100\u2666winutility:movetoscreenlocation:bot2:bot2default\r\n\u219110
+      \u2193100\u2666winutility:movetoscreenlocation:bot3:bot3default\r\n\u219110
+      \u2193100\u2666winutility:movetoscreenlocation:bot4:bot4default\r\n\u219110
+      \u2193100\u2666winutility:movetoscreenlocation:bot5:bot5default \u2617name
+      Set three window to they place\r\n\u2617callid boxes:fivebotattack\r\n\r\n\u219110
+      \u2193100\u2666macro:bot:select1 \r\n\u219110 \u21931600\u2666jomi: \u231B8
+      7\u2193 \u231B50 7\u2191  \r\n\u219110 \u2193100\u2666macro:bot:select1 \r\n\u219110
+      \u2193100\u2666jomi: \u231B10 tab\u2193 \u231B20 tab\u2191 \u231B10  a\u2193
+      \u231B20 a\u2191 8\u2193 \u231B20 8\u2191 3\u2193 \u231B20 3\u2191 1\u2193
+      \u231B20 1\u2191 0\u2193 \u231B20 0\u2191  \r\n\r\n\u219110 \u2193100\u2666macro:bot:select1
+      \r\n\u219110 \u2193100\u2666jomi: \u231B10 tab\u2193 \u231B20 tab\u2191 \u231B10 
+      a\u2193 \u231B20 a\u2191 8\u2193 \u231B20 8\u2191 3\u2193 \u231B20 3\u2191
+      1\u2193 \u231B20 1\u2191 0\u2193 \u231B20 0\u2191  \r\n\u219110 \u2193100\u2666macro:bot:select2\r\n\u219110
+      \u2193100\u2666jomi: \u231B10  tab\u2193 \u231B20 tab\u2191 \u231B10  a\u2193
+      \u231B20 a\u2191 8\u2193 \u231B20 8\u2191 3\u2193 \u231B20 3\u2191 1\u2193
+      \u231B20 1\u2191 0\u2193 \u231B20 0\u2191  \r\n\u219110 \u2193100\u2666macro:bot:select3\r\n\u219110
+      \u2193100\u2666jomi: \u231B10  tab\u2193 \u231B20 tab\u2191 \u231B10  a\u2193
+      \u231B20 a\u2191 8\u2193 \u231B20 8\u2191 3\u2193 \u231B20 3\u2191 1\u2193
+      \u231B20 1\u2191 0\u2193 \u231B20 0\u2191  \r\n\u219110 \u2193100\u2666macro:bot:select4\r\n\u219110
+      \u2193100\u2666jomi: \u231B10  tab\u2193 \u231B20 tab\u2191 \u231B10  a\u2193
+      \u231B20 a\u2191  8\u2193 \u231B20 8\u2191 3\u2193 \u231B20 3\u2191 1\u2193
+      \u231B20 1\u2191 0\u2193 \u231B20 0\u2191  \r\n\u219110 \u2193100\u2666macro:bot:select5\r\n\u219110
+      \u2193100\u2666jomi: \u231B10  tab\u2193 \u231B20 tab\u2191 \u231B10  a\u2193
+      \u231B20 a\u2191 8\u2193 \u231B20 8\u2191 3\u2193 \u231B20 3\u2191 1\u2193
+      \u231B20 1\u2191 0\u2193 \u231B20 0\u2191  \r\n\u219110 \u2193100\u2666macro:bot:select1\r\n\u2617name
+      Set three window to they place\r\n\u2617callid boxes:fivebotfollow\r\n\u219110
+      \u2193100\u2666macro:bot:select1\r\n\u219110 \u2193250\u2666macro:box:followleader\r\n\u219110
+      \u2193100\u2666macro:bot:select2\r\n\u219110 \u2193250\u2666macro:box:followleader\r\n\u219110
+      \u2193100\u2666macro:bot:select3\r\n\u219110 \u2193250\u2666macro:box:followleader\r\n\u219110
+      \u2193100\u2666macro:bot:select4\r\n\u219110 \u2193250\u2666macro:box:followleader\r\n\u219110
+      \u2193100\u2666macro:bot:select5\r\n\u219110 \u2193250\u2666macro:box:followleader\r\n\u219110
+      \u2193100\u2666macro:bot:select1\r\n\u2617name Set three window to they place\r\n\u2617callid
+      boxes:fivebotheal\r\n\u219110 \u2193100\u2666macro:bot:select1\r\n\u219110
+      \u2193100\u2666jomi: 8\u2193 \u231B20 8\u2191 9\u2193 \u231B20 9\u2191  \r\n\u219110
+      \u2193100\u2666macro:bot:select2\r\n\u219110 \u2193100\u2666jomi: 8\u2193 \u231B20
+      8\u2191 9\u2193 \u231B20 9\u2191 \r\n\u219110 \u2193100\u2666macro:bot:select3\r\n\u219110
+      \u2193100\u2666jomi: 8\u2193 \u231B20 8\u2191 9\u2193 \u231B20 9\u2191 \r\n\u219110
+      \u2193100\u2666macro:bot:select4\r\n\u219110 \u2193100\u2666jomi: 8\u2193 \u231B20
+      8\u2191 9\u2193 \u231B20 9\u2191 \r\n\u219110 \u2193100\u2666macro:bot:select5\r\n\u219110
+      \u2193100\u2666jomi: 8\u2193 \u231B20 8\u2191 9\u2193 \u231B20 9\u2191 \r\n\u219110
+      \u2193100\u2666macro:bot:select1\r\n\u2617name Set three window to they place\r\n\u2617callid
+      boxes:fivebotinvokepet\r\n\u219110 \u2193100\u2666macro:bot:select1\r\n\u219110
+      \u2193100\u2666jomi: 3\u2193 \u231B20 3\u2191\r\n\u219110 \u2193100\u2666macro:bot:select2\r\n\u219110
+      \u2193100\u2666jomi: 3\u2193 \u231B20 3\u2191\r\n\u219110 \u2193100\u2666macro:bot:select3\r\n\u219110
+      \u2193100\u2666jomi: 3\u2193 \u231B20 3\u2191 \r\n\u219110 \u2193100\u2666macro:bot:select4\r\n\u219110
+      \u2193100\u2666jomi: 3\u2193 \u231B20 3\u2191\r\n\u219110 \u2193100\u2666macro:bot:select5\r\n\u219110
+      \u2193100\u2666jomi: 3\u2193 \u231B20 3\u2191 \r\n\u219110 \u2193100\u2666macro:bot:select1\r\n\u2617name
+      Set three window to they place\r\n\u2617callid boxes:fivebotloadsoulattack\r\n\u219110
+      \u219310\u2666macro:bot:select1 \r\n\u219110 \u2193300\u2666jomi:  tab\u2193 
+      tab\u2191 \u231B10  a\u2193 \u231B20 a\u2191  0\u2193 \u231B20 0\u2191  \r\n\u219110
+      \u219310\u2666macro:bot:select2\r\n\u219110 \u2193300\u2666jomi:  tab\u2193 
+      tab\u2191 \u231B10  a\u2193 \u231B20 a\u2191  0\u2193 \u231B20 0\u2191   \r\n\u219110
+      \u219310\u2666macro:bot:select3\r\n\u219110 \u2193300\u2666jomi:  tab\u2193 
+      tab\u2191 \u231B10  a\u2193 \u231B20 a\u2191  0\u2193 \u231B20 0\u2191  \r\n\u219110
+      \u219310\u2666macro:bot:select4\r\n\u219110 \u2193300\u2666jomi:  tab\u2193 
+      tab\u2191 \u231B10  a\u2193 \u231B20 a\u2191  0\u2193 \u231B20 0\u2191  \r\n\u219110
+      \u219310\u2666macro:bot:select5\r\n\u219110 \u2193300\u2666jomi:  tab\u2193 
+      tab\u2191 \u231B10  a\u2193 \u231B20 a\u2191  0\u2193 \u231B20 0\u2191   \r\n\u219110
+      \u219310\u2666macro:bot:select1\r\n\u2617name Set three window to they place\r\n\u2617callid
+      boxes:fivebotloot\r\n\u219110 \u2193250\u2666mouseutility:gridleftclick:Bot1center:5:5:5\r\n\u219110
+      \u2193250\u2666mouseutility:gridleftclick:Bot2center:5:5:5\r\n\u219110 \u2193250\u2666mouseutility:gridleftclick:Bot3center:5:5:5\r\n\u219110
+      \u2193250\u2666mouseutility:gridleftclick:Bot4center:5:5:5\r\n\u219110 \u2193250\u2666mouseutility:gridleftclick:Bot5center:5:5:5\r\n\u219110
+      \u2193100\u2666macro:bot:select1\r\n\u2617name Set three window to they place\r\n\u2617callid
+      boxes:fivebotquickattack\r\n\u219110 \u21932\u2666macro:bot:select1 \r\n\u219110
+      \u2193300\u2666jomi:  tab\u2193  tab\u2191 \u231B10  a\u2193 \u231B20 a\u2191 
+      1\u2193 \u231B20 1\u2191  \r\n\u219110 \u21932\u2666macro:bot:select2\r\n\u219110
+      \u2193300\u2666jomi:  tab\u2193  tab\u2191 \u231B10  a\u2193 \u231B20 a\u2191 
+      1\u2193 \u231B20 1\u2191   \r\n\u219110 \u21932\u2666macro:bot:select3\r\n\u219110
+      \u2193300\u2666jomi:  tab\u2193  tab\u2191 \u231B10  a\u2193 \u231B20 a\u2191 
+      1\u2193 \u231B20 1\u2191  \r\n\u219110 \u21932\u2666macro:bot:select4\r\n\u219110
+      \u2193300\u2666jomi:  tab\u2193  tab\u2191 \u231B10  a\u2193 \u231B20 a\u2191 
+      1\u2193 \u231B20 1\u2191  \r\n\u219110 \u21932\u2666macro:bot:select5\r\n\u219110
+      \u2193300\u2666jomi:  tab\u2193  tab\u2191 \u231B10  a\u2193 \u231B20 a\u2191 
+      1\u2193 \u231B20 1\u2191   \r\n\u219110 \u21932\u2666macro:bot:select1\r\n\u2617name
+      Set three window to they place\r\n\u2617callid boxes:largethreehealer\r\n\u219110
+      \u2193100\u2666winutility:setfocuson:hunterone \r\n\u219110 \u2193100\u2666winutility:movetoscreenlocation:hunterone:LargeSmallLeft
+      \r\n\u219110 \u2193100\u2666winutility:setfocuson:huntertwo\r\n\u219110 \u2193100\u2666winutility:movetoscreenlocation:huntertwo:LargeSmallRight  
+      \r\n\u219110 \u2193100\u2666winutility:setfocuson:healer\r\n\u219110 \u2193100\u2666winutility:movetoscreenlocation:healer:LargeMain
+      \u2617name Set three window to they place\r\n\u2617callid boxes:largethreehunterone\r\n\u219110
+      \u2193100\u2666winutility:setfocuson:hunterone \r\n\u219110 \u2193100\u2666winutility:movetoscreenlocation:hunterone:LargeMain
+      \r\n\u219110 \u2193100\u2666winutility:setfocuson:huntertwo\r\n\u219110 \u2193100\u2666winutility:movetoscreenlocation:huntertwo:LargeSmallRight  
+      \r\n\u219110 \u2193100\u2666winutility:setfocuson:healer\r\n\u219110 \u2193100\u2666winutility:movetoscreenlocation:healer:LargeSmallLeft
+      \u2617name Set three window to they place\r\n\u2617callid boxes:moveinline\r\n\u219110
+      \u2193100\u2666macro:bot:select2\r\n\u219110 \u2193250\u2666jomi: w\u2193\u231B100
+      w\u2191\r\n\u219110 \u2193100\u2666macro:bot:select3\r\n\u219110 \u2193250\u2666jomi:
+      w\u2193\u231B200 w\u2191\r\n\u219110 \u2193100\u2666macro:bot:select4\r\n\u219110
+      \u2193250\u2666jomi: x\u2193\u231B200 x\u2191\r\n\u219110 \u2193100\u2666macro:bot:select5\r\n\u219110
+      \u2193250\u2666jomi: x\u2193\u231B100 x\u2191\r\n\u219110 \u2193100\u2666macro:bot:select1\r\n\u2617name
+      Set three window to they place\r\n\u2617callid boxes:moveinpentagra\r\n\u219110
+      \u219350\u2666macro:bot:select2\r\n\u219110 \u219350\u2666macro:bot:select2\r\n\u2191500
+      \u21935000\u2666jomi: q\u2193\u231B70 q\u2191 z\u2193\u231B2200 z\u2191 d\u2193\u231B750
+      d\u2191\r\n\u219110 \u219310\u2666macro:bot:select5\r\n\u2191100  \u21935000\u2666jomi:
+      d\u2193\u231B70 d\u2191 z\u2193\u231B2200 z\u2191 q\u2193\u231B750 q\u2191\r\n\u219110
+      \u219310\u2666macro:bot:select3\r\n\u2191100  \u21935000\u2666jomi: q\u2193\u231B200
+      q\u2191 z\u2193\u231B1200 z\u2191 d\u2193\u231B600 d\u2191\r\n\u219110 \u219310\u2666macro:bot:select4\r\n\u2191100 
+      \u21935000\u2666jomi: d\u2193\u231B200 d\u2191 z\u2193\u231B1200 z\u2191 q\u2193\u231B600
+      q\u2191\r\n\u219110 \u219310\u2666macro:bot:select1\r\n\u2191100  \u21935000\u2666jomi:
+      s\u2193\u231B230 s\u2191\r\n\u2617name Set three window to they place\r\n\u2617callid
+      boxes:defaultthree\r\n\u219110 \u2193100\u2666winutility:setfocuson:hunterone
+      \r\n\u219110 \u2193100\u2666winutility:movetoscreenlocation:hunterone:SecondaryBox
+      \r\n\u219110 \u2193100\u2666winutility:setfocuson:huntertwo\r\n\u219110 \u2193100\u2666winutility:movetoscreenlocation:huntertwo:ThirdBox  
+      \r\n\u219110 \u2193100\u2666winutility:setfocuson:healer\r\n\u219110 \u2193100\u2666winutility:movetoscreenlocation:healer:MainBox "
+  - m_extensionWithDot: 
+    m_sourceFiles: []
+    m_textMerged: "//\u231B \u27A4 \u2617 | \u2193 \u2191 \u2666 .timeofdaytocommands\r\n\r\n\r\n\r\nAt
+      05:05 \u2666\u2666 macro:boxes:connectaccount\r\nAt 05:15 \u2666\u2666 bool:spambrainlessattack:true\r\n\r\nAt
+      04h 18m 0s 500ms\u2666!wow\u2666debuglog testd\r\n//Every 2 seconds\u2666 debuglog
+      test\r\n//\u231B \u27A4 \u2617 | \u2193 \u2191 \u2666 .timeofdaytocommands\r\n\r\n\r\n\r\nAt
+      05:05 \u2666\u2666 macro:boxes:connectaccount\r\nAt 05:15 \u2666\u2666 bool:spambrainlessattack:true\r\n\r\nAt
+      04h 18m 0s 500ms\u2666!wow\u2666debuglog testd\r\n//Every 2 seconds\u2666 debuglog
+      test\r\n"
+  - m_extensionWithDot: 
+    m_sourceFiles: []
+    m_textMerged: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n\r\n<AnalogDigitalCompressConfig>\r\n\r\n 
+      <PortConnections>\r\n    <PortConnection portId=\"20\" patternName=\"Custom\"
+      />\r\n  </PortConnections>\r\n  <AnalogDigitalCompressPatterns>\r\n     <AnalogDigitalCompressPattern
+      name=\"Custom\" docUrl=\"\">\r\n      <digit index=\"10\" label=\"FootRD\"
+      />\r\n      <digit index=\"9\" label= \"FootLT\" />\r\n      <digit index=\"7\"
+      label= \"FootRT\" />\r\n      <digit index=\"8\" label= \"FootLD\" />\r\n     
+      <digit index=\"3\" label=\"CustomAltLeft\" />\r\n      <digit index=\"1\" label=\"CustomAltRight\"
+      />\r\n      <digit index=\"2\" label=\"CustomLeft\" />\r\n      <digit index=\"0\"
+      label=\"CustomMidLeft\" />\r\n      <digit index=\"6\" label=\"CustomMidRight\"
+      />\r\n      <digit index=\"4\" label=\"CustomRight\" />\r\n    </AnalogDigitalCompressPattern>\r\n 
+      \r\n  </AnalogDigitalCompressPatterns>\r\n\r\n</AnalogDigitalCompressConfig><?xml
+      version=\"1.0\" encoding=\"utf-8\"?>\r\n\r\n<AnalogDigitalCompressConfig>\r\n\r\n 
+      <PortConnections>\r\n    <PortConnection portId=\"20\" patternName=\"Custom\"
+      />\r\n  </PortConnections>\r\n  <AnalogDigitalCompressPatterns>\r\n     <AnalogDigitalCompressPattern
+      name=\"Custom\" docUrl=\"\">\r\n      <digit index=\"10\" label=\"FootRD\"
+      />\r\n      <digit index=\"9\" label= \"FootLT\" />\r\n      <digit index=\"7\"
+      label= \"FootRT\" />\r\n      <digit index=\"8\" label= \"FootLD\" />\r\n     
+      <digit index=\"3\" label=\"CustomAltLeft\" />\r\n      <digit index=\"1\" label=\"CustomAltRight\"
+      />\r\n      <digit index=\"2\" label=\"CustomLeft\" />\r\n      <digit index=\"0\"
+      label=\"CustomMidLeft\" />\r\n      <digit index=\"6\" label=\"CustomMidRight\"
+      />\r\n      <digit index=\"4\" label=\"CustomRight\" />\r\n    </AnalogDigitalCompressPattern>\r\n 
+      \r\n  </AnalogDigitalCompressPatterns>\r\n\r\n</AnalogDigitalCompressConfig>"
+  - m_extensionWithDot: 
+    m_sourceFiles: []
+    m_textMerged: "//\u231B \u27A4 \u2617 | \u2193 \u2191 \u2666\r\n//.screenlocations\r\nUpScreen\u26660.0\u26660.5\u26661.0\u26661.0\r\nDownScreen\u26660.0\u26660.0\u26661.0\u26660.5\r\nLeftScreen\u26660.0\u26660.0\u26660.5\u26661.0\r\nRightScreen\u26660.0\u26660.0\u26660.5\u26661.0\r\nMainScreen\u26660.01\u26660.01\u26660.99\u26660.991\r\n\r\nLeftBorderScreen
+      \u26660.0\u26660.0\u26660.1\u26661.0\r\nRightBorderScreen \u26660.9\u26660.0\u26661.0\u26661.0\r\nDownBorderScreen
+      \u26660.0\u26660.0\u26661.0\u26660.1\r\nUpBorderScreen \u26660.0\u26660.9\u26661.0\u26661.0\r\n\r\nLeftTopScreen
+      \u26660.0\u26660.5\u26660.5\u26661.0\r\nLeftDownScreen \u26660.0\u26660.0\u26660.5\u26660.5\r\nRightTopScreen
+      \u26660.5\u26660.5\u26661.0\u26661.0\r\nRightDownScreen \u26660.5\u26660.0\u26661.0\u26660.5\r\n\r\nInMainScreen
+      \u26660.0\u26660.0\u26661.0\u26661.0\r\nPureCenter \u26660.49\u26660.49\u26660.51\u26660.51\r\nNearCenter
+      \u26660.45\u26660.45\u26660.55\u26660.55\r\nCenterRegion \u26660.40\u26660.40\u26660.60\u26660.60\r\n\r\n\r\n\u2617observedasboolean
+      UpScreen DownScreen LeftScreen RightScreen\r\n\u2617observedasboolean LeftBorderScreen
+      RightBorderScreen DownBorderScreen UpBorderScreen\r\n\u2617observedasboolean
+      LeftTopScreen LeftDownScreen RightTopScreen RightDownScreen\r\n\u2617observedasboolean
+      InMainScreen \r\n\u2617observedasboolean PureCenter NearCenter CenterRegion\r\n\r\n//\u231B
+      \u27A4 \u2617 | \u2193 \u2191 \u2666\r\n//.screenlocations\r\nMainBox\u26660.15\u26660.03\u26660.85\u26660.6 
+      !&\xE0a\"\r\nSecondaryBox\u26660.0\u26660.5\u26660.5\u26661.0\r\nThirdBox\u26660.5\u26660.5\u26661.0\u26661.0\r\n\r\nLargeMain\u26660.0\u26660.2\u26661.0\u26661.0\r\nLargeSmallLeft\u26660.0\u26660.03\u26660.5\u26660.2\r\nLargeSmallRight\u26660.5\u26660.03\u26661.0\u26660.2\r\n\r\n\r\nBot1default\u26660.0\u26660.17\u26661.0\u26660.83\r\nBot2default\u26660.0\u26660.8\u26660.5\u26661.0\r\nBot3default\u26660.5\u26660.8\u26661.0\u26661.0\r\nBot4default\u26660.0\u26660.03\u26660.5\u26660.2\r\nBot5default\u26660.5\u26660.03\u26661.0\u26660.2\r\nBot1center\u26660.1\u26660.4\u26660.9\u26660.6\r\nBot2center\u26660.1\u26660.84\u26660.4\u26660.86\r\nBot3center\u26660.6\u26660.84\u26660.9\u26660.86\r\nBot4center\u26660.1\u26660.1\u26660.4\u26660.13\r\nBot5center\u26660.6\u26660.1\u26660.9\u26660.13\r\n\r\n\u2617observedasboolean
+      ThirdBox SecondaryBox MainBox \r\n\r\n//\u231B \u27A4 \u2617 | \u2193 \u2191
+      \u2666\r\n//.screenlocations\r\nUpScreen\u26660.0\u26660.5\u26661.0\u26661.0\r\nDownScreen\u26660.0\u26660.0\u26661.0\u26660.5\r\nLeftScreen\u26660.0\u26660.0\u26660.5\u26661.0\r\nRightScreen\u26660.0\u26660.0\u26660.5\u26661.0\r\nMainScreen\u26660.01\u26660.01\u26660.99\u26660.991\r\n\r\nLeftBorderScreen
+      \u26660.0\u26660.0\u26660.1\u26661.0\r\nRightBorderScreen \u26660.9\u26660.0\u26661.0\u26661.0\r\nDownBorderScreen
+      \u26660.0\u26660.0\u26661.0\u26660.1\r\nUpBorderScreen \u26660.0\u26660.9\u26661.0\u26661.0\r\n\r\nLeftTopScreen
+      \u26660.0\u26660.5\u26660.5\u26661.0\r\nLeftDownScreen \u26660.0\u26660.0\u26660.5\u26660.5\r\nRightTopScreen
+      \u26660.5\u26660.5\u26661.0\u26661.0\r\nRightDownScreen \u26660.5\u26660.0\u26661.0\u26660.5\r\n\r\nInMainScreen
+      \u26660.0\u26660.0\u26661.0\u26661.0\r\nPureCenter \u26660.49\u26660.49\u26660.51\u26660.51\r\nNearCenter
+      \u26660.45\u26660.45\u26660.55\u26660.55\r\nCenterRegion \u26660.40\u26660.40\u26660.60\u26660.60\r\n\r\n\r\n\u2617observedasboolean
+      UpScreen DownScreen LeftScreen RightScreen\r\n\u2617observedasboolean LeftBorderScreen
+      RightBorderScreen DownBorderScreen UpBorderScreen\r\n\u2617observedasboolean
+      LeftTopScreen LeftDownScreen RightTopScreen RightDownScreen\r\n\u2617observedasboolean
+      InMainScreen \r\n\u2617observedasboolean PureCenter NearCenter CenterRegion\r\n\r\n//\u231B
+      \u27A4 \u2617 | \u2193 \u2191 \u2666\r\n//.screenlocations\r\nMainBox\u26660.15\u26660.03\u26660.85\u26660.6 
+      !&\xE0a\"\r\nSecondaryBox\u26660.0\u26660.5\u26660.5\u26661.0\r\nThirdBox\u26660.5\u26660.5\u26661.0\u26661.0\r\n\r\nLargeMain\u26660.0\u26660.2\u26661.0\u26661.0\r\nLargeSmallLeft\u26660.0\u26660.03\u26660.5\u26660.2\r\nLargeSmallRight\u26660.5\u26660.03\u26661.0\u26660.2\r\n\r\n\r\nBot1default\u26660.0\u26660.17\u26661.0\u26660.83\r\nBot2default\u26660.0\u26660.8\u26660.5\u26661.0\r\nBot3default\u26660.5\u26660.8\u26661.0\u26661.0\r\nBot4default\u26660.0\u26660.03\u26660.5\u26660.2\r\nBot5default\u26660.5\u26660.03\u26661.0\u26660.2\r\nBot1center\u26660.1\u26660.4\u26660.9\u26660.6\r\nBot2center\u26660.1\u26660.84\u26660.4\u26660.86\r\nBot3center\u26660.6\u26660.84\u26660.9\u26660.86\r\nBot4center\u26660.1\u26660.1\u26660.4\u26660.13\r\nBot5center\u26660.6\u26660.1\u26660.9\u26660.13\r\n\r\n\u2617observedasboolean
+      ThirdBox SecondaryBox MainBox \r\n\r\n"
+  - m_extensionWithDot: 
+    m_sourceFiles: []
+    m_textMerged: "box:playhealer \u2666winutility:movetoscreenlocation:healer:MainBox
+      \u2666 winutility:movetoscreenlocation:hunterone:SecondaryBox \u2666 winutility:movetoscreenlocation:huntertwo:ThirdBox\r\nbox:playhealer
+      \u2666winutility:movetoscreenlocation:healer:MainBox \u2666 winutility:movetoscreenlocation:hunterone:SecondaryBox
+      \u2666 winutility:movetoscreenlocation:huntertwo:ThirdBox\r\n\r\nbox:focushealer   
+      \u2666 winutility:setfocuson:healer\r\nbox:focushunterone \u2666 winutility:setfocuson:hunterone\r\nbox:focushuntertwo
+      \u2666 winutility:setfocuson:huntertwo\r\nbox:focusonmain \u2666 macro:box:focushealer\r\n\r\nbox:alljump
+      \u2666 In 0|macro:box:focushealer \u2666 In 100|jomi:space\u2193 space\u2191
+      \u2666In 200| macro:box:focushunterone \u2666In 300| jomi:space\u2193 space\u2191
+      \u2666In 400| macro:box:focushuntertwo \u2666 In 500|jomi:space\u2193 space\u2191
+      \u2666In 600| macro:box:focusonmain\r\nbox:alldance \u2666 In 0|macro:box:focushealer
+      \u2666 In 100|macro:wow:dance \u2666In 200| macro:box:focushunterone \u2666In
+      300| macro:wow:dance \u2666In 400| macro:box:focushuntertwo \u2666 In 500|macro:wow:dance
+      \u2666In 600| macro:box:focusonmain\r\nbox:allfollow\u2666In 0|macro:box:focushealer
+      \u2666 In 100|macro:box:followleader \u2666In 200| macro:box:focushunterone
+      \u2666In 600|macro:box:followleader \u2666In 800| macro:box:focushuntertwo
+      \u2666 In 1000|macro:box:followleader \u2666In 1200| macro:box:focusonmain\r\nbox:allloot\u2666In
+      0|macro:box:focushealer \u2666 In 100|macro:box:loot \u2666In 200| macro:box:focushunterone
+      \u2666In 600|macro:box:loot \u2666In 800| macro:box:focushuntertwo \u2666 In
+      1000|macro:box:loot \u2666In 1200| macro:box:focusonmain\r\n\r\nwow:dance\u2666jomi:enter\u2193
+      enter\u2191 [[/dance]] enter\u2193 enter\u2191 \r\n\r\n//box:followleader\u2666jomi:enter\u2193
+      enter\u2191 [[/follow Ofdemons]] enter\u2193 enter\u2191 \r\nbox:followleader\u2666jomi:f12\u2193
+      f12\u2191\r\nbox:loot\u2666jomi:enter\u2193 enter\u2191 [[/cast Loot-A-Rang]]
+      enter\u2193 enter\u2191 \r\n\r\n\r\n\r\nbot:select1 \u2666 winutility:setfocuson:bot1\r\nbot:select2
+      \u2666 winutility:setfocuson:bot2\r\nbot:select3 \u2666 winutility:setfocuson:bot3\r\nbot:select4
+      \u2666 winutility:setfocuson:bot4\r\nbot:select5 \u2666 winutility:setfocuson:bot5
+      \r\nbox:accounthunterone \u2666jomi: \u231B150 [[yo]] \u231B150 tab\u2193 tab\u2191
+      \u231B150 [[yo]] \u231B150 enter\u2193 enter\u2191 \r\nbox:accounthealer \u2666jomi:\u231B150
+      [[yo]] \u231B150 tab\u2193 tab\u2191 \u231B150 [[yo]] \u231B150 enter\u2193
+      enter\u2191\r\nbox:accounthuntertwo \u2666jomi:\u231B150 [[yo]] \u231B150 tab\u2193
+      tab\u2191 \u231B150 [[yo]] \u231B150 enter\u2193 enter\u2191\r\nbox:validatehunterone
+      \u2666jomi:  \u231B150 down\u2193 down\u2191  \u231B150 enter\u2193 enter\u2191
+      \u2666In 10000|macro:box:focushunterone\u2666In 11000|jomi:\u231B250 enter\u2193
+      enter\u2191\r\nbox:validatehealer \u2666jomi:\u231B250 enter\u2193 enter\u2191\r\nbox:validatehuntertwo
+      \u2666jomi:\u231B250 enter\u2193 enter\u2191\r\n\r\n\r\nbox:alllogin\u2666In
+      0|macro:box:focushealer\u2666In 100|macro:box:accounthealer\u2666In 1000|macro:box:focushunterone\u2666In
+      1100|macro:box:accounthunterone\u2666In 2000|macro:box:focushuntertwo\u2666In
+      2100|macro:box:accounthuntertwo\r\nbox:validatechamp\u2666In 0|macro:box:focushealer\u2666In
+      100|macro:box:validatehealer\u2666In 1000|macro:box:focushunterone\u2666In
+      1100|macro:box:validatehunterone\u2666In 2000|macro:box:focushuntertwo\u2666In
+      2100|macro:box:validatehuntertwo\r\n\r\n\r\n\r\nbox:accounthunterone \u2666jomi:
+      \u231B150 [[yo]] \u231B150 tab\u2193 tab\u2191 \u231B150 [[yo]] \u231B150 enter\u2193
+      enter\u2191 \r\nbox:accounthealer \u2666jomi:\u231B150 [[yo]] \u231B150 tab\u2193
+      tab\u2191 \u231B150 [[yo]] \u231B150 enter\u2193 enter\u2191\r\nbox:accounthuntertwo
+      \u2666jomi:\u231B150 [[yo]] \u231B150 tab\u2193 tab\u2191 \u231B150 [[yo]]
+      \u231B150 enter\u2193 enter\u2191\r\nbox:validatehunterone \u2666jomi:  \u231B150
+      down\u2193 down\u2191  \u231B150 enter\u2193 enter\u2191 \u2666In 10000|macro:box:focushunterone\u2666In
+      11000|jomi:\u231B250 enter\u2193 enter\u2191\r\nbox:validatehealer \u2666jomi:\u231B250
+      enter\u2193 enter\u2191\r\nbox:validatehuntertwo \u2666jomi:\u231B250 enter\u2193
+      enter\u2191\r\n\r\n\r\nbox:alllogin\u2666In 0|macro:box:focushealer\u2666In
+      100|macro:box:accounthealer\u2666In 1000|macro:box:focushunterone\u2666In 1100|macro:box:accounthunterone\u2666In
+      2000|macro:box:focushuntertwo\u2666In 2100|macro:box:accounthuntertwo\r\nbox:validatechamp\u2666In
+      0|macro:box:focushealer\u2666In 100|macro:box:validatehealer\u2666In 1000|macro:box:focushunterone\u2666In
+      1100|macro:box:validatehunterone\u2666In 2000|macro:box:focushuntertwo\u2666In
+      2100|macro:box:validatehuntertwo\r\n\r\n\r\nbox:playhealer \u2666winutility:movetoscreenlocation:healer:MainBox
+      \u2666 winutility:movetoscreenlocation:hunterone:SecondaryBox \u2666 winutility:movetoscreenlocation:huntertwo:ThirdBox\r\nbox:playhealer
+      \u2666winutility:movetoscreenlocation:healer:MainBox \u2666 winutility:movetoscreenlocation:hunterone:SecondaryBox
+      \u2666 winutility:movetoscreenlocation:huntertwo:ThirdBox\r\n\r\nbox:focushealer   
+      \u2666 winutility:setfocuson:healer\r\nbox:focushunterone \u2666 winutility:setfocuson:hunterone\r\nbox:focushuntertwo
+      \u2666 winutility:setfocuson:huntertwo\r\nbox:focusonmain \u2666 macro:box:focushealer\r\n\r\nbox:alljump
+      \u2666 In 0|macro:box:focushealer \u2666 In 100|jomi:space\u2193 space\u2191
+      \u2666In 200| macro:box:focushunterone \u2666In 300| jomi:space\u2193 space\u2191
+      \u2666In 400| macro:box:focushuntertwo \u2666 In 500|jomi:space\u2193 space\u2191
+      \u2666In 600| macro:box:focusonmain\r\nbox:alldance \u2666 In 0|macro:box:focushealer
+      \u2666 In 100|macro:wow:dance \u2666In 200| macro:box:focushunterone \u2666In
+      300| macro:wow:dance \u2666In 400| macro:box:focushuntertwo \u2666 In 500|macro:wow:dance
+      \u2666In 600| macro:box:focusonmain\r\nbox:allfollow\u2666In 0|macro:box:focushealer
+      \u2666 In 100|macro:box:followleader \u2666In 200| macro:box:focushunterone
+      \u2666In 600|macro:box:followleader \u2666In 800| macro:box:focushuntertwo
+      \u2666 In 1000|macro:box:followleader \u2666In 1200| macro:box:focusonmain\r\nbox:allloot\u2666In
+      0|macro:box:focushealer \u2666 In 100|macro:box:loot \u2666In 200| macro:box:focushunterone
+      \u2666In 600|macro:box:loot \u2666In 800| macro:box:focushuntertwo \u2666 In
+      1000|macro:box:loot \u2666In 1200| macro:box:focusonmain\r\n\r\nwow:dance\u2666jomi:enter\u2193
+      enter\u2191 [[/dance]] enter\u2193 enter\u2191 \r\n\r\n//box:followleader\u2666jomi:enter\u2193
+      enter\u2191 [[/follow Ofdemons]] enter\u2193 enter\u2191 \r\nbox:followleader\u2666jomi:f12\u2193
+      f12\u2191\r\nbox:loot\u2666jomi:enter\u2193 enter\u2191 [[/cast Loot-A-Rang]]
+      enter\u2193 enter\u2191 \r\n\r\n\r\n\r\nbot:select1 \u2666 winutility:setfocuson:bot1\r\nbot:select2
+      \u2666 winutility:setfocuson:bot2\r\nbot:select3 \u2666 winutility:setfocuson:bot3\r\nbot:select4
+      \u2666 winutility:setfocuson:bot4\r\nbot:select5 \u2666 winutility:setfocuson:bot5
+      \r\nbox:accounthunterone \u2666jomi: \u231B150 [[yo]] \u231B150 tab\u2193 tab\u2191
+      \u231B150 [[yo]] \u231B150 enter\u2193 enter\u2191 \r\nbox:accounthealer \u2666jomi:\u231B150
+      [[yo]] \u231B150 tab\u2193 tab\u2191 \u231B150 [[yo]] \u231B150 enter\u2193
+      enter\u2191\r\nbox:accounthuntertwo \u2666jomi:\u231B150 [[yo]] \u231B150 tab\u2193
+      tab\u2191 \u231B150 [[yo]] \u231B150 enter\u2193 enter\u2191\r\nbox:validatehunterone
+      \u2666jomi:  \u231B150 down\u2193 down\u2191  \u231B150 enter\u2193 enter\u2191
+      \u2666In 10000|macro:box:focushunterone\u2666In 11000|jomi:\u231B250 enter\u2193
+      enter\u2191\r\nbox:validatehealer \u2666jomi:\u231B250 enter\u2193 enter\u2191\r\nbox:validatehuntertwo
+      \u2666jomi:\u231B250 enter\u2193 enter\u2191\r\n\r\n\r\nbox:alllogin\u2666In
+      0|macro:box:focushealer\u2666In 100|macro:box:accounthealer\u2666In 1000|macro:box:focushunterone\u2666In
+      1100|macro:box:accounthunterone\u2666In 2000|macro:box:focushuntertwo\u2666In
+      2100|macro:box:accounthuntertwo\r\nbox:validatechamp\u2666In 0|macro:box:focushealer\u2666In
+      100|macro:box:validatehealer\u2666In 1000|macro:box:focushunterone\u2666In
+      1100|macro:box:validatehunterone\u2666In 2000|macro:box:focushuntertwo\u2666In
+      2100|macro:box:validatehuntertwo\r\n\r\n\r\n"
+  - m_extensionWithDot: 
+    m_sourceFiles: []
+    m_textMerged: "//.windowkeytoboolean\r\nOEM_7 \u2666Follow  //.windowkeytoboolean\r\nOEM_7
+      \u2666Follow  "
+  - m_extensionWithDot: 
+    m_sourceFiles: []
+    m_textMerged: "\r\nwow\u2666World of Warcraft\r\ncrash\u2666Crash Bandicoot\r\nftl\u2666FTL:\r\nlol\u2666League
+      of Legends\r\naoe4\u2666Age of Empires IV\r\nwow\u2666World of Warcraft\r\ncrash\u2666Crash
+      Bandicoot\r\nftl\u2666FTL:\r\nlol\u2666League of Legends\r\naoe4\u2666Age of
+      Empires IV\r\n\r\n\r\n"
+  - m_extensionWithDot: 
+    m_sourceFiles: []
+    m_textMerged: "<omixml>\r\n    <midiconnectionin midiName=\"Arduino Micro\" />\r\n   
+      <midiconnectionin midiName=\"MPK mini play\" />\r\n    <midiconnectionout midiName=\"Microsoft
+      GS Wavetable Synth\" />\r\n\r\n    <!-- This standar is one I created before
+      learning midi -->\r\n    <analogdigitalcompressioncom comIdName=\"COM20\" nomenclatureName=\"FootPattern\"
+      />\r\n\r\n</omixml>"
+--- !u!4 &39663428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39663425}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &39663429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39663425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36cd844257089174b81c7cf6ac02c494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &178911796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 178911798}
+  - component: {fileID: 178911797}
+  m_Layer: 0
+  m_Name: IFileExtensionMerger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &178911797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178911796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3d8c9e2e56ccb248a491f2b5253516c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_fileExtensionMerger:
+    m_inBannedExtension: []
+    m_absolutePathsToAdd: []
+    m_fileMergerManager:
+      m_fileRegisterTarget:
+        m_allFilesAbsolutePath: []
+        m_extensionsInDebug: []
+      m_debug: []
+--- !u!4 &178911798
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178911796}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &705507993
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 705507995}
+  - component: {fileID: 705507994}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &705507994
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705507993}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 1
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &705507995
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705507993}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &963194225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 963194228}
+  - component: {fileID: 963194227}
+  - component: {fileID: 963194226}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &963194226
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+--- !u!20 &963194227
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &963194228
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2050987676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2050987678}
+  - component: {fileID: 2050987677}
+  - component: {fileID: 2050987680}
+  - component: {fileID: 2050987679}
+  m_Layer: 0
+  m_Name: TDD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2050987677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050987676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca5a8c183698b32428544ffd0a8126f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_abstractPathsToFind:
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd
+  m_allAbstractPaths:
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\default.keyboardtoboolean
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\default.miditoboolean
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\default.simplecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\default.timecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\default.winxboxtoboolean
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\dispofivebot.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fishingbait.timeofdaytocommands
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fivebotattack.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fivebotfollow.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fivebotheal.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fivebotinvokepet.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fivebotloadsoulattack.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fivebotlootclick.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\fivebotquickattack.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\footboard.portnomenclature
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\footboard.simplecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\general.screenlocations
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\largethreehealer.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\largethreehunterone.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\moveinline.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\moveinpentagra.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\multibox.screenlocations
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\multibox.stack
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\mutlibox.stringtocommands
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\password.stringtocommands
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\test.simplecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\winspecific.windowkeytoboolean
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\wow.apptoboolean
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\wowthreewindow.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd\xbox.simplecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\default.keyboardtoboolean
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\default.miditoboolean
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\default.omi.xml
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\default.simplecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\default.timecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\default.winxboxtoboolean
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\dispofivebot.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fishingbait.timeofdaytocommands
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fivebotattack.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fivebotfollow.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fivebotheal.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fivebotinvokepet.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fivebotloadsoulattack.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fivebotlootclick.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\fivebotquickattack.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\footboard.portnomenclature
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\footboard.simplecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\general.screenlocations
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\largethreehealer.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\largethreehunterone.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\lol.simplecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\lol.stringtocommands
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\lol.timecondition
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\moveinline.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\moveinpentagra.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\multibox.screenlocations
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\multibox.stack
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\mutlibox.stringtocommands
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\password.stringtocommands
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\winspecific.windowkeytoboolean
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\wow.apptoboolean
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\wowthreewindow.relativetimedcommadlines
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\xbox.simplecondition
+  m_extensionEnd: omi.xml
+  m_abstractPathsFilterByExtensionEnd:
+  - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd\default.omi.xml
+  m_fileRegister: {fileID: 0}
+--- !u!4 &2050987678
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050987676}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2050987679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050987676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97658f22c5315784c8152e8e753e7684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_default: {}
+--- !u!114 &2050987680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050987676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cad5489447edfb45af32ba8bf0b0936, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

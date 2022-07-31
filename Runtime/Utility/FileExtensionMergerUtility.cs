@@ -5,6 +5,7 @@ using UnityEngine;
 using System.Linq;
 using System.Net;
 using System;
+using System.Text;
 
 public class FileExtensionMergerUtility
 {
@@ -31,6 +32,17 @@ public class FileExtensionMergerUtility
         }
         pathsFound = pathsFound.Distinct().ToList();
     }
+
+    public static void Convert(in  string[] extensions, out IFileExtension[] iExtensions)
+    {
+        List<IFileExtension> tempList = new List<IFileExtension>();
+        for (int m = 0; m < extensions.Length; m++)
+        {
+            tempList.Add(new FileExtensionDefault(extensions[m]));
+        }
+        iExtensions = tempList.ToArray();
+    }
+
     public static void GetPathsFromFolderAbsolutePath(in string[] pathsToLoad, out string[] pathsFound)
     {
         GetPathsFromFolderAbsolutePath(in pathsToLoad, out List<string> paths);
@@ -50,6 +62,24 @@ public class FileExtensionMergerUtility
             }
         }
         pathsFiltered = result;
+    }
+
+    public static void CombineFilesAsText(in string[] filesPath, out string text)
+    {
+        if (filesPath == null)
+        {
+            text = "";
+            return;
+        }
+
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < filesPath.Length; i++)
+        {
+            if (filesPath[i] != null && File.Exists(filesPath[i])) {
+                sb.Append(File.ReadAllText(filesPath[i]));
+            }
+        }
+        text = sb.ToString();
     }
 
     public static bool PathStringEndWithExtension(in string path, in string fileExtension)
