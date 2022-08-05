@@ -1203,8 +1203,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_fileExtensionMerger:
-    m_inBannedExtension: []
-    m_absolutePathsToAdd: []
+    m_inBannedExtension:
+    - .miditoboolean
+    - .stack
+    m_absolutePathsToAdd:
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationd
+    - G:\OMI\Code\Unity\2020_03_11_UnityOMI\Configurationddd
     m_fileMergerManager:
       m_fileRegisterTarget:
         m_allFilesAbsolutePath: []
